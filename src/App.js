@@ -42,24 +42,53 @@ export default function App() {
           }}
           width="1280"
           height="712"
-          src="https://www.youtube.com/embed/Cy5MiOqarYs?autoplay=1&controls=0&info=0&loop=1&fs=0&cc_load_policy=0&iv_load_policy=0&rel=0"
-          title="YouTube video player"
-          frameborder="0"
-          allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; autoplay; showcontrols;"
-          referrerpolicy="strict-origin-when-cross-origin"
-          allowfullscreen="0"
+          src="https://www.youtube.com/embed/Cy5MiOqarYs?autoplay=1&controls=0&info=0&loop=1&fs=0&rel=0"
+          title="yt"
+          allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; autoplay; controls; info; loop; rel"
+          referrerPolicy="strict-origin-when-cross-origin"
+          allowFullScreen="0"
         ></iframe>
+
         <div
           style={{
             display: "flex",
-            flex: "0 1 auto",
-            alignContent: "center",
-            alignItems: "center",
-            marginTop: "40px",
             flexDirection: "row",
+            marginTop: "40px",
+            textAlign: "center",
           }}
         >
-          CREDITS
+          <div
+            style={{
+              display: "flex",
+              flexDirection: "row",
+              marginTop: "40px",
+              textAlign: "center",
+            }}
+          >
+            <div
+              style={{
+                display: "block",
+                textAlign: "right",
+              }}
+            >
+              <p>Vidéo & Musique : Doori Kwak 곽두리 </p>
+              <p>Poème : Ryeorin Kim 김려린 </p>
+              <p>Dessin & Animation : Soyoung Park 박소영 </p>
+              <p>Affiche & Calligraphie : Nari Choi 최나리 </p>
+            </div>
+            <div
+              style={{
+                display: "block",
+                marginLeft: "20px",
+                textAlign: "left",
+              }}
+            >
+              <p>doorikwak.fr@gmail.com</p>
+              <p>ryeorinkim@gmail.com</p>
+              <p>xxx@xxx.com</p>
+              <p>nari.gn@gmail.com</p>
+            </div>
+          </div>
         </div>
       </div>
     </div>
