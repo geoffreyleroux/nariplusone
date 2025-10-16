@@ -74,10 +74,10 @@ export default function App() {
                 textAlign: "left",
               }}
             >
-              <p>doorikwak.fr@gmail.com</p>
-              <p>ryeorinkim@gmail.com</p>
-              <p>xxx@xxx.com</p>
-              <p>nari.gn@gmail.com</p>
+              <p>doorikwak.fr@gmail.com <b>@d0ori</b></p>
+              <p>ryeorinkim@gmail.com <b>@libbyseaweed</b></p>
+              <p>newsymind@gmail.com <b>@notoldsoyoung</b></p>
+              <p>nari.gn@gmail.com <b>@memeno</b></p>
             </div>
           </div>
         </div>
