@@ -16,6 +16,7 @@ const styles = `
     * {
     font-family: "Jost";
     }
+    
 `;
 
 export default function App() {
