@@ -23,25 +23,25 @@ export default function App() {
           height: "100vh",
         }}
       >
-        <iframe
+        <video
           style={{
             marginTop: "20px",
-            marginBottom: "20px",
+            marginBottom: "40px",
             display: "flex",
             flex: "0 1 auto",
             alignContent: "center",
             alignItems: "center",
             flexDirection: "row",
           }}
-          width="1280"
-          height="712"
-          src="https://www.youtube.com/embed/Cy5MiOqarYs?autoplay=1&controls=0&info=0&loop=1&fs=0&rel=0"
-          title="yt"
-          allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; autoplay; controls; info; loop; rel"
-          referrerPolicy="strict-origin-when-cross-origin"
-          allowFullScreen="0"
-        ></iframe>
-
+          width="900"
+          height="600"
+          controls
+          autoplay
+          loop
+        >
+          <source src="TOUTANOU2.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
         <div
           style={{
             display: "flex",
