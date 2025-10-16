@@ -22,21 +22,46 @@ export default function App() {
   return (
     <div className="exhibition">
       <style>{styles}</style>
-      <iframe
-        width="560"
-        height="315"
-        src="https://www.youtube.com/embed/Cy5MiOqarYs?si=acVl7UOhla2zK9BL"
-        title="YouTube video player"
-        frameborder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-        referrerpolicy="strict-origin-when-cross-origin"
-        allowfullscreen
-      ></iframe>
-      <div>CREDITS</div>
-      <div>CREDITS</div>
-      <div>CREDITS</div>
-      <div>CREDITS</div>
-      <div>CREDITS</div>
+      <div
+        style={{
+          display: "flex",
+          flex: "1 1 auto",
+          alignItems: "center",
+          justifyContent: "center",
+          flexDirection: "column",
+          height: "100vh",
+        }}
+      >
+        <iframe
+          style={{
+            display: "flex",
+            flex: "0 1 auto",
+            alignContent: "center",
+            alignItems: "center",
+            flexDirection: "row",
+          }}
+          width="1280"
+          height="712"
+          src="https://www.youtube.com/embed/Cy5MiOqarYs?autoplay=1&controls=0&info=0&loop=1&fs=0&cc_load_policy=0&iv_load_policy=0&rel=0"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; autoplay; showcontrols;"
+          referrerpolicy="strict-origin-when-cross-origin"
+          allowfullscreen="0"
+        ></iframe>
+        <div
+          style={{
+            display: "flex",
+            flex: "0 1 auto",
+            alignContent: "center",
+            alignItems: "center",
+            marginTop: "40px",
+            flexDirection: "row",
+          }}
+        >
+          CREDITS
+        </div>
+      </div>
     </div>
   );
 }
