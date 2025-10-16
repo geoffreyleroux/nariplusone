@@ -14,9 +14,8 @@ const styles = `
         --color-accent: #8B4513; /* Terracotta/Spice */
     }
     * {
-    font-family: "Jost";
+      font-family: "Jost";
     }
-    
 `;
 
 export default function App() {
