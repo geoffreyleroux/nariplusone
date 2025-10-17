@@ -66,7 +66,7 @@ export default function App() {
         }}
       >
         <video className="video" controls autoplay loop>
-          <source src="TOUTANOU2.mp4" type="video/mp4" />
+          <source src="TOUTANOU.mp4" type="video/mp4" />
           Your browser does not support the video tag.
         </video>
         <div className="text-container">
