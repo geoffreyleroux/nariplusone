@@ -29,6 +29,11 @@ const styles = `
       max-width: 100%;
       max-height: 100%;
     }
+    a {  
+      text-decoration: none;
+      color: white;  
+      cursor: pointer;
+    }
 
     @media only screen and (max-width: 600px) {
       .video {
@@ -40,13 +45,7 @@ const styles = `
       * {
         font-size: 9px
       }
-      .text-container {
-      
-      }
-
-      .main-container {
-      
-      }
+    
     }
 `;
 
@@ -96,16 +95,53 @@ export default function App() {
               }}
             >
               <p>
-                doorikwak.fr@gmail.com <b>@d0ori</b>
+                doorikwak.fr@gmail.com{" "}
+                <b>
+                  <a
+                    href="https://www.instagram.com/d0ori/"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    @d0ori
+                  </a>
+                </b>
               </p>
               <p>
-                ryeorinkim@gmail.com <b>@libbyseaweed</b>
+                ryeorinkim@gmail.com{" "}
+                <b>
+                  {" "}
+                  <a
+                    href="https://www.instagram.com/libbyseaweed/"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    @libbyseaweed
+                  </a>
+                </b>
               </p>
               <p>
-                newsymind@gmail.com <b>@notoldsoyoung</b>
+                newsymind@gmail.com{" "}
+                <b>
+                  <a
+                    href="https://www.instagram.com/notoldsoyoung/"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    @notoldsoyoung
+                  </a>
+                </b>
               </p>
               <p>
-                nari.gn@gmail.com <b>@memeno</b>
+                nari.gn@gmail.com{" "}
+                <b>
+                  <a
+                    href="https://www.instagram.com/memeno/"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    @memeno
+                  </a>
+                </b>
               </p>
             </div>
           </div>
