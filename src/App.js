@@ -1,25 +1,46 @@
 import React from "react";
 
 const styles = `
-    @import url('https://fonts.googleapis.com/css2?family=Jost:wght@400;700&family=Roboto:wght@100;200;300;400;500;600;700&display=swap');
+    @font-face {
+      font-family: Montage; /* set name */
+      src: url(fonts/Montage.woff); /* url of the font */
+    }
+
+    @keyframes gradient-animation {
+      0% {
+        background-position: 0% 50%;
+      }
+      50% {
+        background-position: 100% 50%;
+      }
+      100% {
+        background-position: 0% 50%;
+      }
+    }
+
+    body {
+      overflow: hidden;
+    }
 
     * {
-      background-color: black;
-      font-family: "Jost";
+      // background-color: #d9bd60;
+      font-family: "Montage";
+      color: #5d5804;
+      font-size: 18px;
     }
-    
-    .video {
-      margin-bottom: 40px;
-      width: 900px;
-      height: 600px;
-      maxWidth: 100%;
-      maxHeight: 100%;
+
+    .gradient-background {
+      background: linear-gradient(0deg,white,#b49e72);
+      background-size: 120% 120%;
+      animation: gradient-animation 8s ease infinite;
     }
+
     .text-container {
       display: flex;
       flex-direction: row;
       text-align: center;
     }
+
     .main-container {
       display: flex;
       flex: 0 1 auto;
@@ -29,122 +50,101 @@ const styles = `
       max-width: 100%;
       max-height: 100%;
     }
-    a {  
-      text-decoration: none;
-      color: white;  
-      cursor: pointer;
+
+    .content{
+      width: 33%;
+      display: flex;
+      flex-direction: column;
+      text-align: center;
     }
 
     @media only screen and (max-width: 600px) {
-      .video {
+      .content{
         width: 100%;
-        height: auto;
-        max-width: 100%;
-        max-height: 100%;
+        margin-bottom: 40px;
+      }
+      .main-container {
+        flex-wrap: wrap;
       }
       * {
-        font-size: 9px
+        font-size: 12px;
       }
-    
+    }
+
+    .us {
+      width: 400px;
+      height: auto;
+      position: fixed;
+      bottom: -180px;
+      right: -130px;
     }
 `;
 
 export default function App() {
   return (
-    <div className="exhibition">
+    <div className="nariplusone gradient-background">
       <style>{styles}</style>
+      {/*  eslint-disable-next-line jsx-a11y/alt-text */}
+      <img className="us" src="us.png" />
       <div
-        className="main-container"
+        className="main-container "
         style={{
           display: "flex",
           flex: "1 1 auto",
           alignItems: "center",
           justifyContent: "center",
-          flexDirection: "column",
+          flexDirection: "row",
           height: "100vh",
         }}
       >
-        <video className="video" controls autoplay loop>
-          <source src="TOUTANOU.mp4" type="video/mp4" />
-          Your browser does not support the video tag.
-        </video>
-        <div className="text-container">
-          <div
-            style={{
-              display: "flex",
-              flexDirection: "row",
-              textAlign: "center",
-            }}
-          >
-            <div
-              style={{
-                display: "block",
-                textAlign: "right",
-              }}
+        <div className="content">
+          <p>FRANCAIS</p>
+          <p>
+            LIEU:&nbsp;
+            <a
+              href="https://maps.app.goo.gl/yi4EkstYsQ3qEycXA"
+              target="_blank"
+              rel="noreferrer"
             >
-              <p>Vidéo & Musique : Doori Kwak 곽두리 </p>
-              <p>Poème : Ryeorin Kim 김려린 </p>
-              <p>Dessin & Animation : Soyoung Park 박소영 </p>
-              <p>Affiche & Calligraphie : Nari Choi 최나리 </p>
-            </div>
-            <div
-              style={{
-                display: "block",
-                marginLeft: "20px",
-                textAlign: "left",
-              }}
+              CHÂTEAU DE CHAMPLÂTREUX
+            </a>
+          </p>
+          <p>DATE</p>
+          <p>HOTELS</p>
+          <p>NAVETTE</p>
+        </div>
+        <div className="content">
+          <p>ENGLISH</p>
+          <p>
+            VENUE:&nbsp;
+            <a
+              href="https://maps.app.goo.gl/yi4EkstYsQ3qEycXA"
+              target="_blank"
+              rel="noreferrer"
             >
-              <p>
-                doorikwak.fr@gmail.com{" "}
-                <b>
-                  <a
-                    href="https://www.instagram.com/d0ori/"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    @d0ori
-                  </a>
-                </b>
-              </p>
-              <p>
-                ryeorinkim@gmail.com{" "}
-                <b>
-                  {" "}
-                  <a
-                    href="https://www.instagram.com/libbyseaweed/"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    @libbyseaweed
-                  </a>
-                </b>
-              </p>
-              <p>
-                newsymind@gmail.com{" "}
-                <b>
-                  <a
-                    href="https://www.instagram.com/notoldsoyoung/"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    @notoldsoyoung
-                  </a>
-                </b>
-              </p>
-              <p>
-                nari.gn@gmail.com{" "}
-                <b>
-                  <a
-                    href="https://www.instagram.com/memeno/"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    @memeno
-                  </a>
-                </b>
-              </p>
-            </div>
-          </div>
+              CHÂTEAU DE CHAMPLÂTREUX
+            </a>
+          </p>
+          <p>DATE</p>
+          <p>HOTELS</p>
+          <p>SHUTTLES</p>
+        </div>
+
+        <div className="content">
+          <p>한국인</p>
+          <p>
+            VENUE:&nbsp;
+            <a
+              href="https://maps.app.goo.gl/yi4EkstYsQ3qEycXA"
+              target="_blank"
+              rel="noreferrer"
+            >
+              CHÂTEAU DE CHAMPLÂTREUX
+            </a>
+          </p>
+          <p>HOTELS</p>
+          <p>DATE</p>
+          <p>SHUTTLES</p>
         </div>
       </div>
     </div>
