@@ -6,20 +6,9 @@ const styles = `
       src: url(fonts/Montage.woff); /* url of the font */
     }
 
-    @keyframes gradient-animation {
-      0% {
-        background-position: 0% 50%;
-      }
-      50% {
-        background-position: 100% 50%;
-      }
-      100% {
-        background-position: 0% 50%;
-      }
-    }
-
     body {
       overflow: hidden;
+      background-color: #b49e72;
     }
 
     * {
@@ -29,12 +18,11 @@ const styles = `
       font-size: 18px;
     }
 
-    .gradient-background {
-      background: linear-gradient(0deg,white,#b49e72);
-      background-size: 120% 120%;
-      animation: gradient-animation 8s ease infinite;
+    .flag {
+      display: flex;
+      width: 60px;
+      height: auto;
     }
-
     .text-container {
       display: flex;
       flex-direction: row;
@@ -56,7 +44,9 @@ const styles = `
       display: flex;
       flex-direction: column;
       text-align: center;
+      align-items: center;
     }
+
     @media only screen and (max-width: 600px) {
       .content{
         width: 100%;
@@ -97,7 +87,8 @@ export default function App() {
         }}
       >
         <div className="content">
-          <p>FRANCAIS</p>
+          <img className="flag" src="french.png" />
+
           <p>
             LIEU:&nbsp;
             <a
@@ -130,7 +121,8 @@ export default function App() {
         </div>
 
         <div className="content">
-          <p>한국인</p>
+          <img className="flag" src="korean.png" />
+
           <p>
             VENUE:&nbsp;
             <a
