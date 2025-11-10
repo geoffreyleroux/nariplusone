@@ -57,7 +57,6 @@ const styles = `
       flex-direction: column;
       text-align: center;
     }
-
     @media only screen and (max-width: 600px) {
       .content{
         width: 100%;
