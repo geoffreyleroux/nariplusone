@@ -1,6 +1,6 @@
 /* eslint-disable jsx-a11y/alt-text */
 import React from "react";
-
+import Hotels from "./Hotels.js";
 const styles = `
     @font-face {
       font-family: Montage; /* set name */
@@ -126,8 +126,10 @@ export default function App() {
                 CHÂTEAU DE CHAMPLÂTREUX
               </a>
             </p>
-            <p>DATE</p>
-            <p>HOTELS</p>
+            <p>Le 12 juillet 2026</p>
+
+            <Hotels></Hotels>
+
             <p>NAVETTE</p>
           </div>
         )}
@@ -144,9 +146,11 @@ export default function App() {
                 CHÂTEAU DE CHAMPLÂTREUX
               </a>
             </p>
-            <p>DATE</p>
-            <p>HOTELS</p>
-            <p>SHUTTLES</p>
+            <p>July 12th 2026</p>
+
+            <Hotels></Hotels>
+
+            <h3>SHUTTLES</h3>
           </div>
         )}
 
@@ -162,14 +166,17 @@ export default function App() {
                 CHÂTEAU DE CHAMPLÂTREUX
               </a>
             </p>
-            <p>HOTELS</p>
-            <p>DATE</p>
-            <p>SHUTTLES</p>
+
+            <Hotels></Hotels>
+
+            <p>July 12th 2026</p>
+
+            <h3>SHUTTLES</h3>
           </div>
         )}
       </div>
       {/*  eslint-disable-next-line jsx-a11y/alt-text */}
-      <img className="us" src="us.png" />{" "}
+      <img style={{pointerEvents:"none"}} className="us" src="us.png" />{" "}
     </div>
   );
 }
