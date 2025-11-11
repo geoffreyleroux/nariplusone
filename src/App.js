@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/alt-text */
 import React from "react";
 
 const styles = `
@@ -40,7 +41,7 @@ const styles = `
     }
 
     .content{
-      width: 33%;
+      width: 100%;
       display: flex;
       flex-direction: column;
       text-align: center;
@@ -51,9 +52,6 @@ const styles = `
       .content{
         width: 100%;
         margin-bottom: 40px;
-      }
-      .main-container {
-        flex-wrap: wrap;
       }
       * {
         font-size: 12px;
@@ -67,14 +65,44 @@ const styles = `
       bottom: -180px;
       right: -130px;
     }
+
+    .langage_selector {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+    }
 `;
 
 export default function App() {
+  const [lang, setLang] = React.useState(navigator.language || "en");
+  const [openList, setOpenList] = React.useState(false);
+
   return (
     <div className="nariplusone gradient-background">
       <style>{styles}</style>
-      {/*  eslint-disable-next-line jsx-a11y/alt-text */}
-      <img className="us" src="us.png" />
+      <div
+        className="langage_selector"
+        onClick={() => {
+          setOpenList(!openList);
+        }}
+      >
+        <div value="fr">
+          <img className="flag" src={`${lang}.png`} />
+        </div>
+        {openList && (
+          <div>
+            <div value="fr" onClick={() => setLang("fr")}>
+              <img className="flag" src="fr.png" />
+            </div>
+            <div value="en" onClick={() => setLang("en")}>
+              <img className="flag" src="en.png" />
+            </div>
+            <div value="kr" onClick={() => setLang("kr")}>
+              <img className="flag" src="kr.png" />
+            </div>
+          </div>
+        )}
+      </div>
       <div
         className="main-container "
         style={{
@@ -86,58 +114,62 @@ export default function App() {
           height: "100vh",
         }}
       >
-        <div className="content">
-          <img className="flag" src="french.png" />
+        {lang === "fr" && (
+          <div className="content">
+            <p>
+              LIEU:&nbsp;
+              <a
+                href="https://maps.app.goo.gl/yi4EkstYsQ3qEycXA"
+                target="_blank"
+                rel="noreferrer"
+              >
+                CHÂTEAU DE CHAMPLÂTREUX
+              </a>
+            </p>
+            <p>DATE</p>
+            <p>HOTELS</p>
+            <p>NAVETTE</p>
+          </div>
+        )}
+        {lang === "en" && (
+          <div className="content">
+            <p>ENGLISH</p>
+            <p>
+              VENUE:&nbsp;
+              <a
+                href="https://maps.app.goo.gl/yi4EkstYsQ3qEycXA"
+                target="_blank"
+                rel="noreferrer"
+              >
+                CHÂTEAU DE CHAMPLÂTREUX
+              </a>
+            </p>
+            <p>DATE</p>
+            <p>HOTELS</p>
+            <p>SHUTTLES</p>
+          </div>
+        )}
 
-          <p>
-            LIEU:&nbsp;
-            <a
-              href="https://maps.app.goo.gl/yi4EkstYsQ3qEycXA"
-              target="_blank"
-              rel="noreferrer"
-            >
-              CHÂTEAU DE CHAMPLÂTREUX
-            </a>
-          </p>
-          <p>DATE</p>
-          <p>HOTELS</p>
-          <p>NAVETTE</p>
-        </div>
-        <div className="content">
-          <p>ENGLISH</p>
-          <p>
-            VENUE:&nbsp;
-            <a
-              href="https://maps.app.goo.gl/yi4EkstYsQ3qEycXA"
-              target="_blank"
-              rel="noreferrer"
-            >
-              CHÂTEAU DE CHAMPLÂTREUX
-            </a>
-          </p>
-          <p>DATE</p>
-          <p>HOTELS</p>
-          <p>SHUTTLES</p>
-        </div>
-
-        <div className="content">
-          <img className="flag" src="korean.png" />
-
-          <p>
-            VENUE:&nbsp;
-            <a
-              href="https://maps.app.goo.gl/yi4EkstYsQ3qEycXA"
-              target="_blank"
-              rel="noreferrer"
-            >
-              CHÂTEAU DE CHAMPLÂTREUX
-            </a>
-          </p>
-          <p>HOTELS</p>
-          <p>DATE</p>
-          <p>SHUTTLES</p>
-        </div>
+        {lang === "kr" && (
+          <div className="content">
+            <p>
+              VENUE:&nbsp;
+              <a
+                href="https://maps.app.goo.gl/yi4EkstYsQ3qEycXA"
+                target="_blank"
+                rel="noreferrer"
+              >
+                CHÂTEAU DE CHAMPLÂTREUX
+              </a>
+            </p>
+            <p>HOTELS</p>
+            <p>DATE</p>
+            <p>SHUTTLES</p>
+          </div>
+        )}
       </div>
+      {/*  eslint-disable-next-line jsx-a11y/alt-text */}
+      <img className="us" src="us.png" />{" "}
     </div>
   );
 }
