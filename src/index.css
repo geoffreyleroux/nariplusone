@@ -1,11 +1,8 @@
-/* --- General Styling & Fonts --- */
-@import url("https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Roboto:wght@300;400;700&display=swap");
-
 :root {
   --color-primary: #d3a449; /* Desert Gold */
   --color-secondary: #000000; /* Pitch Black */
-  --color-text: #e0e0e0; /* Light Sand */
-  --color-background: #1a1a1a; /* Dark Sand/Rock */
+  --color-text: #3f50ae; /* Light Sand */
+  --color-background: #ebe5d9; /* Dark Sand/Rock */
   --color-accent: #8b4513; /* Terracotta/Spice */
 }
 
@@ -16,23 +13,147 @@
 }
 
 body {
-  font-family: "Roboto", sans-serif;
+  font-family: "Palmore";
   background-color: var(--color-background);
   color: var(--color-text);
   line-height: 1.6;
+  font-size: 26px;
   scroll-behavior: smooth;
+  /* overflow-x: hidden; */
+}
 
-  /* Needed to enable 3D perspective context for reliable parallax */
-  perspective: 1px;
-  transform-style: preserve-3d;
+@font-face {
+  font-family: "Palmore";
+  src: url("/public/fonts/palmore/OTF/Palmore.otf");
+}
+
+.flag {
+  display: flex;
+  width: 60px;
+  height: auto;
+}
+.gif {
+  position: relative;
+  display: flex;
+  flex: 1 1 33%;
+  max-width: 33%;
+  flex-direction: column;
+}
+.header {
+  height: 100vh;
+  position: relative;
+  display: block;
+}
+.header h2 {
+  z-index: 1;
+  margin-left: 18%;
+  line-height: 143px;
+  position: absolute;
+  width: 100%;
+}
+
+.header h2 p {
+  color: black;
+  z-index: 1;
+  font-size: 3.5em;
+  width: 100%;
+  font-weight: 500;
+}
+.menu-container {
+  display: flex;
+}
+.menu-container div {
+  color: black;
+  font-size: 1.5em;
+  text-decoration: none !important;
+}
+.weddingProgram {
+  margin-right: 20px;
+  padding-right: 20px;
+  border-right: 1px solid black;
+}
+.weddingProgram,
+.hotelShuttle {
+  line-height: 50px;
+  flex-direction: column;
+  display: flex;
+}
+.menu-container {
+  position: absolute;
+  right: 20px;
+  bottom: 20px;
+  text-transform: uppercase;
+}
+.gif img {
+  filter: grayscale(1);
+  display: flex;
+  width: auto;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.pic {
+}
+.carouselContainer {
+  width: 100%;
+}
+.react-multi-carousel-list {
+}
+
+.text-container {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+}
+
+.main-container {
+  display: flex;
+  flex: 0 1 auto;
+  /* align-content: center;
+  align-items: center; */
+  flex-direction: row;
+  max-width: 100vw;
+  min-width: 100vw;
+  max-height: 100%;
+}
+
+.content {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+}
+
+@media only screen and (max-width: 600px) {
+  .content {
+    width: 100%;
+    margin-bottom: 40px;
+  }
+  * {
+    font-size: 12px;
+  }
+}
+
+.us {
+  width: 400px;
+  height: auto;
+  position: fixed;
+  bottom: -180px;
+  right: -130px;
+}
+
+.langage_selector {
+  position: absolute;
+  top: 10px;
+  right: 10px;
 }
 
 h1,
 h2,
 h3 {
-  font-family: "Cinzel", serif;
   text-transform: uppercase;
-  color: var(--color-primary);
   letter-spacing: 2px;
   margin-bottom: 0.5em;
 }
@@ -40,13 +161,14 @@ h3 {
 h1 {
   font-size: 5em;
 }
+
 h2 {
   font-size: 2.5em;
   margin-top: 1.5em;
 }
+
 h3 {
   font-size: 1.6em;
-  color: var(--color-text);
 }
 
 .container {
@@ -61,158 +183,4 @@ h3 {
   border-bottom: 1px solid rgba(211, 164, 73, 0.2);
   position: relative;
   z-index: 2;
-}
-
-/* Remove the border from the last section */
-#rewards.section {
-  border-bottom: none;
-}
-
-/* --- Parallax Structure --- */
-.parallax-wrapper {
-  position: relative;
-  height: 100vh;
-  overflow: hidden;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
-}
-
-.parallax-background {
-  /* NEWLY GENERATED BACKGROUND IMAGE */
-  background-image: url("https://image.pollinations.ai/prompt/Dune%20Awakening%20deep%20desert%20PvP%20battle%20inside%20an%20ancient%20ruined%20temple,%20futuristic%20soldiers%20with%20lasguns%20and%20swords,%20spice%20explosion,%20sandworm%20in%20distance,%20cinematic,%20epic");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: contain;
-
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-
-  /* Parallax magic: Fixed background, slower movement */
-  transform: translateZ(-1px) scale(2);
-  z-index: 1;
-}
-
-/* --- Hero Content (Foreground) --- */
-.hero {
-  height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  position: relative;
-  z-index: 3;
-}
-
-.hero-overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: rgba(0, 0, 0, 0.6);
-  backdrop-filter: blur(2px);
-  z-index: 2;
-}
-
-.hero-content {
-  z-index: 3;
-  padding: 20px;
-}
-
-.hero h1 {
-  font-size: 5em;
-  text-shadow: 0 0 15px var(--color-primary), 0 0 5px var(--color-secondary);
-  margin-bottom: 0.1em;
-}
-
-.tagline {
-  font-family: "Cinzel", serif;
-  font-size: 1.5em;
-  color: var(--color-primary);
-  margin-bottom: 2em;
-}
-
-.event-info {
-  display: flex;
-  justify-content: center;
-  gap: 40px;
-  margin-top: 40px;
-  font-size: 1.2em;
-}
-
-.info-box {
-  background-color: rgba(211, 164, 73, 0.1);
-  border: 1px solid var(--color-primary);
-  padding: 15px 30px;
-  border-radius: 5px;
-  text-align: left;
-}
-
-.info-box span {
-  display: block;
-  font-weight: 700;
-  color: var(--color-primary);
-}
-
-/* --- Content Blocks --- */
-.grid-3 {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 30px;
-  margin-top: 30px;
-}
-
-.challenge-card,
-.reward-card {
-  background-color: #242424;
-  padding: 25px;
-  border-radius: 8px;
-  border-top: 3px solid var(--color-primary);
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
-  transition: transform 0.3s;
-}
-
-.challenge-card:hover,
-.reward-card:hover {
-  transform: translateY(-5px);
-}
-
-.challenge-card h3,
-.reward-card h3 {
-  color: var(--color-primary);
-  margin-bottom: 10px;
-}
-
-/* --- Utility & Responsiveness --- */
-.text-center {
-  text-align: center;
-}
-.emphasis {
-  color: var(--color-primary);
-  font-weight: 700;
-}
-.risk-free {
-  color: #50b33a;
-  font-weight: 700;
-}
-
-@media (max-width: 768px) {
-  .hero h1 {
-    font-size: 3em;
-  }
-  .tagline {
-    font-size: 1.2em;
-  }
-  .event-info {
-    flex-direction: column;
-    gap: 20px;
-  }
-  .section {
-    padding: 40px 0;
-  }
-  .parallax-background {
-    transform: none;
-  } /* Turn off 3D parallax for mobile */
 }
