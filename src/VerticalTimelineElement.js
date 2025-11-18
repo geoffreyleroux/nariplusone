@@ -1,7 +1,7 @@
 /* eslint-disable jsx-a11y/alt-text */
 import React from "react";
 import PropTypes from "prop-types";
-import classNames from "classnames";
+import classnames from "classnames";
 import { InView } from "react-intersection-observer";
 
 export const VerticalTimelineElement = ({
@@ -34,7 +34,7 @@ export const VerticalTimelineElement = ({
       <div
         ref={ref}
         id={id}
-        className={classNames(className, "vertical-timeline-element", {
+        className={classnames(className, "vertical-timeline-element", {
           "vertical-timeline-element--left": position === "left",
           "vertical-timeline-element--right": position === "right",
           "vertical-timeline-element--no-children": children === "",
@@ -45,7 +45,7 @@ export const VerticalTimelineElement = ({
           <span // eslint-disable-line jsx-a11y/no-static-element-interactions
             style={iconStyle}
             onClick={iconOnClick}
-            className={classNames(
+            className={classnames(
               iconClassName,
               "vertical-timeline-element-icon",
               `shadow-size-${shadowSize}`, // for shadow size
@@ -60,7 +60,7 @@ export const VerticalTimelineElement = ({
           <div
             style={contentStyle}
             onClick={onTimelineElementClick}
-            className={classNames(
+            className={classnames(
               textClassName,
               "vertical-timeline-element-content",
               {
@@ -75,7 +75,7 @@ export const VerticalTimelineElement = ({
             />
             {children}
             <span
-              className={classNames(
+              className={classnames(
                 dateClassName,
                 "vertical-timeline-element-date"
               )}
@@ -84,12 +84,12 @@ export const VerticalTimelineElement = ({
             </span>
             <div>
               <img
-                className={classNames(
+                className={classnames(
                   imageClassName,
-                  "vertical-timeline-element-image"
+                  "vertical-timeline-element-image",
                 )}
                 src={image}
-              ></img>
+              />
             </div>
           </div>
         </React.Fragment>
@@ -108,6 +108,7 @@ VerticalTimelineElement.propTypes = {
   contentStyle: PropTypes.shape({}),
   date: PropTypes.node,
   dateClassName: PropTypes.string,
+  imageClassName: PropTypes.string,
   icon: PropTypes.element,
   iconClassName: PropTypes.string,
   iconStyle: PropTypes.shape({}),

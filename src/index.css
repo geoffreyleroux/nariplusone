@@ -19,12 +19,11 @@ body {
   line-height: 1.6;
   font-size: 26px;
   scroll-behavior: smooth;
-  /* overflow-x: hidden; */
 }
 
 @font-face {
   font-family: "Palmore";
-  src: url("/public/fonts/palmore/OTF/Palmore.otf");
+  src: url("/public/fonts/palmore/TTF/PalmoreRegular.ttf");
 }
 
 .flag {
@@ -97,8 +96,6 @@ body {
 .carouselContainer {
   width: 100%;
 }
-.react-multi-carousel-list {
-}
 
 .text-container {
   display: flex;
@@ -146,14 +143,6 @@ body {
   }
 }
 
-.us {
-  width: 400px;
-  height: auto;
-  position: fixed;
-  bottom: -180px;
-  right: -130px;
-}
-
 .langage_selector {
   position: absolute;
   top: 10px;
@@ -193,10 +182,4 @@ h3 {
   border-bottom: 1px solid rgba(211, 164, 73, 0.2);
   position: relative;
   z-index: 2;
-}
-.us {
-  width: 150px;
-  pointer-events: none;
-  top: -190px;
-  right: 140%;
 }

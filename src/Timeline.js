@@ -11,12 +11,12 @@ export default function Timeline() {
     border: "0px",
     boxShadow: "0 0px 0 transparent",
   };
-  const iconStyle = { background: "#3f50ae", color: "#3f50ae" };
+  const iconStyle = { background: "black", color: "black" };
   const contentArrowStyle = { borderColor: "transparent" };
   return (
     <div>
       <h1 style={{ width: "100%", textAlign: "center" }}>Schedule</h1>
-      <VerticalTimeline layout="2-columns" lineColor="#3f50ae" animate={false}>
+      <VerticalTimeline layout="2-columns" lineColor="black" animate={false}>
         <VerticalTimelineElement
           position="left"
           contentStyle={contentStyle}
@@ -60,7 +60,7 @@ export default function Timeline() {
           position="right"
           iconStyle={iconStyle}
           contentArrowStyle={contentArrowStyle}
-          image={"us.png"}
+          image="us.png"
           imageClassName="us"
           contentStyle={contentStyle}
         >
