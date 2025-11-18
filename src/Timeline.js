@@ -15,7 +15,7 @@ export default function Timeline() {
   const contentArrowStyle = { borderColor: "transparent" };
   return (
     <div>
-      <h1 style={{ width: "100%", textAlign:"center" }}>Schedule</h1>
+      <h1 style={{ width: "100%", textAlign: "center" }}>Schedule</h1>
       <VerticalTimeline layout="2-columns" lineColor="#3f50ae" animate={false}>
         <VerticalTimelineElement
           position="left"
@@ -51,7 +51,7 @@ export default function Timeline() {
             Arrival at the Castle
           </h3>
           <h4 className="vertical-timeline-element-subtitle">
-            Château de Champlâtreux
+            REFRESHMENTS
           </h4>
           <h5>CHÂTEAU DE CHAMPLÂTREUX D316, 95270 ÉPINAY-CHAMPLÂTREUX</h5>
         </VerticalTimelineElement>
@@ -60,6 +60,8 @@ export default function Timeline() {
           position="right"
           iconStyle={iconStyle}
           contentArrowStyle={contentArrowStyle}
+          image={"us.png"}
+          imageClassName="us"
           contentStyle={contentStyle}
         >
           <h3 className="vertical-timeline-element-title">Ceremony</h3>

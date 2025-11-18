@@ -12,6 +12,7 @@ export const VerticalTimelineElement = ({
   date = "",
   image = undefined,
   dateClassName = "",
+  imageClassName = "",
   icon = null,
   iconClassName = "",
   iconOnClick = null,
@@ -84,7 +85,7 @@ export const VerticalTimelineElement = ({
             <div>
               <img
                 className={classNames(
-                  dateClassName,
+                  imageClassName,
                   "vertical-timeline-element-image"
                 )}
                 src={image}
