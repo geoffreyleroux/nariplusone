@@ -1,10 +1,8 @@
 /* eslint-disable react/jsx-no-target-blank */
 /* eslint-disable jsx-a11y/alt-text */
-// import Carousel from "react-multi-carousel";
 
 import "react-multi-carousel/lib/styles.css";
 import React from "react";
-import classNames from "classnames";
 
 export default function Menu() {
   const [displayed, setDisplayed] = React.useState(1);

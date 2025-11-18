@@ -1,10 +1,11 @@
 /* eslint-disable jsx-a11y/alt-text */
-import React from "react";
+
 import Hotels from "./Hotels.js";
 import Menu from "./Menu.js";
+import Timeline from "./Timeline.js";
 export default function App() {
-  const [lang, setLang] = React.useState(navigator.language || "en");
-  const [openList, setOpenList] = React.useState(false);
+  // const [lang, setLang] = React.useState(navigator.language || "en");
+  // const [openList, setOpenList] = React.useState(false);
 
   return (
     <div className="nariplusone">
@@ -31,6 +32,7 @@ export default function App() {
           </div>
         )}
       </div> */}
+      {/* <img style={{ width: "100%" }} src="Castle.png" /> */}
       <div className="header ">
         <Menu></Menu>
       </div>
@@ -103,6 +105,7 @@ export default function App() {
       </div>
       {/*  eslint-disable-next-line jsx-a11y/alt-text */}
       {/* <img style={{ pointerEvents: "none" }} className="us" src="us.png" />{" "} */}
+      <Timeline />
     </div>
   );
 }
