@@ -1,7 +1,6 @@
 /* eslint-disable react/jsx-no-target-blank */
 /* eslint-disable jsx-a11y/alt-text */
 
-import "react-multi-carousel/lib/styles.css";
 import React from "react";
 
 export default function Menu() {
