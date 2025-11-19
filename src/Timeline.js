@@ -14,15 +14,16 @@ export default function Timeline() {
   const iconStyle = { background: "black", color: "black" };
   const contentArrowStyle = { borderColor: "transparent" };
   return (
-    <div>
-      <h1 style={{ width: "100%", textAlign: "center" }}>Schedule</h1>
+    <div style={{ marginTop: "50px" }} id="Program">
       <VerticalTimeline layout="2-columns" lineColor="black" animate={false}>
         <VerticalTimelineElement
           position="left"
           contentStyle={contentStyle}
           contentArrowStyle={contentArrowStyle}
-          date="14h"
+          date="14:00"
           iconStyle={iconStyle}
+          image="bus.png"
+          imageClassName="bus"
         >
           <h3 className="vertical-timeline-element-title">
             Departure from Opéra
@@ -32,28 +33,28 @@ export default function Timeline() {
           position="right"
           contentStyle={contentStyle}
           contentArrowStyle={contentArrowStyle}
-          date="15h"
+          date="15:00"
           iconStyle={iconStyle}
+          image={"hotel.png"}
         >
           <h3 className="vertical-timeline-element-title">
             Checkin at the hotels
           </h3>
         </VerticalTimelineElement>
         <VerticalTimelineElement
-          date="16h"
+          date="16:00"
           position="left"
           contentStyle={contentStyle}
           contentArrowStyle={contentArrowStyle}
           iconStyle={iconStyle}
-          image={"Castle.png"}
+          image={"welcome.png"}
+          imageClassName="welcome"
         >
           <h3 className="vertical-timeline-element-title">
             Arrival at the Castle
           </h3>
-          <h4 className="vertical-timeline-element-subtitle">
-            REFRESHMENTS
-          </h4>
-          <h5>CHÂTEAU DE CHAMPLÂTREUX D316, 95270 ÉPINAY-CHAMPLÂTREUX</h5>
+          {/* <h4 className="vertical-timeline-element-subtitle">REFRESHMENTS</h4>
+          <h5>CHÂTEAU DE CHAMPLÂTREUX D316, 95270 ÉPINAY-CHAMPLÂTREUX</h5> */}
         </VerticalTimelineElement>
         <VerticalTimelineElement
           date="17:00 - 17:45"
@@ -72,6 +73,7 @@ export default function Timeline() {
           iconStyle={iconStyle}
           contentArrowStyle={contentArrowStyle}
           contentStyle={contentStyle}
+          image={"cocktail.png"}
         >
           <h3 className="vertical-timeline-element-title">Cocktail</h3>
         </VerticalTimelineElement>
@@ -81,6 +83,7 @@ export default function Timeline() {
           iconStyle={iconStyle}
           contentArrowStyle={contentArrowStyle}
           contentStyle={contentStyle}
+          image={"dinner.png"}
         >
           <h3 className="vertical-timeline-element-title">Dinner</h3>
         </VerticalTimelineElement>{" "}
@@ -90,6 +93,7 @@ export default function Timeline() {
           iconStyle={iconStyle}
           contentArrowStyle={contentArrowStyle}
           contentStyle={contentStyle}
+          image={"afterparty.png"}
         >
           <h3 className="vertical-timeline-element-title">AFTER PARTY !!</h3>
         </VerticalTimelineElement>

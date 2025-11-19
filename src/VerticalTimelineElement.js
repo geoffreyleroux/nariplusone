@@ -62,19 +62,11 @@ export const VerticalTimelineElement = ({
             onClick={onTimelineElementClick}
             className={classnames(
               textClassName,
-              "vertical-timeline-element-content",
-              {
-                "bounce-in": inView || visible,
-                "is-hidden": !(inView || visible),
-              }
+              "vertical-timeline-element-content"
             )}
           >
-            <div
-              style={contentArrowStyle}
-              className="vertical-timeline-element-content-arrow"
-            />
-            {children}
             <span
+              style={{ textTransform: "uppercase" }}
               className={classnames(
                 dateClassName,
                 "vertical-timeline-element-date"
@@ -82,15 +74,15 @@ export const VerticalTimelineElement = ({
             >
               {date}
             </span>
-            <div>
-              <img
-                className={classnames(
-                  imageClassName,
-                  "vertical-timeline-element-image",
-                )}
-                src={image}
-              />
-            </div>
+            {children}
+
+            <img
+              className={classnames(
+                imageClassName,
+                "vertical-timeline-element-image"
+              )}
+              src={image}
+            />
           </div>
         </React.Fragment>
       </div>
