@@ -95,7 +95,7 @@ export default function Timeline() {
           contentStyle={contentStyle}
           image={"afterparty.png"}
         >
-          <h3 className="vertical-timeline-element-title">AFTER PARTY !!</h3>
+          <h3 className="vertical-timeline-element-title">AFTER PARTY</h3>
         </VerticalTimelineElement>
       </VerticalTimeline>
     </div>

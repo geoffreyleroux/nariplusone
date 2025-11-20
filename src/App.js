@@ -9,11 +9,16 @@ export default function App() {
 
   return (
     <div className="nariplusone">
-      <div className="header ">
+      <div className="header">
+        <div className="venueInfos">
+          <div className="date">12072026 SUNDAY</div>
+          <div className="address">D316 95270 ÉPINAY-CHAMPLÂTREUX</div>
+          <div className="name">CHÂTEAU DE CHAMPLÂTREUX</div>
+        </div>
         <Menu />
       </div>
 
-      <Timeline  />
+      <Timeline />
 
       <div id="Hotels">
         <Hotels></Hotels>

@@ -196,10 +196,16 @@ h3 {
   .header h2 {
     font-size: 40px;
   }
+  .title p {
+    line-height: 90px;
+  }
 }
 @media only screen and (max-width: 900px) {
   .castle {
     height: 7em;
+  }
+  .title p {
+    line-height: 72px;
   }
   .header h2 {
     line-height: 1;
@@ -210,7 +216,10 @@ h3 {
   * {
     font-size: 12px;
   }
-
+  #Hotels p,
+  #Hotels a {
+    font-size: 22px;
+  }
   .header .title {
     padding-top: 0;
   }
@@ -253,4 +262,16 @@ h3 {
     top: 0;
     left: 0;
   }
+}
+
+.venueInfos {
+  position: absolute;
+  z-index: 2;
+  left: 20px;
+  right: 20px;
+  top: 0;
+  display: flex;
+  flex-direction: row;
+
+  justify-content: space-between;
 }
