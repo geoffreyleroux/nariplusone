@@ -2,9 +2,12 @@
 /* eslint-disable jsx-a11y/alt-text */
 
 import React from "react";
-
+import LangContext from "./LangContext.js";
+import { translate } from "./utils.js";
 export default function Menu() {
+  const lang = React.useContext(LangContext);
   const [displayed, setDisplayed] = React.useState(1);
+
   React.useEffect(() => {
     const interval = setInterval(() => {
       if (displayed === 6) setDisplayed(1);
@@ -12,11 +15,12 @@ export default function Menu() {
     }, 1300);
     return () => clearInterval(interval);
   });
+
   return (
     <>
       <div className="title">
         <h2>
-          <p>Nari and </p>
+          <p>Nari {translate(lang, "and", "et")} </p>
           <p>Geoffrey</p>
         </h2>
         <img className="castle" src="castle.png" />
@@ -36,18 +40,28 @@ export default function Menu() {
                   .getElementById("Program")
                   .scrollIntoView({ behavior: "smooth", block: "center" });
               }}
+              style={
+                lang === "fr" && {
+                  fontSize: "1em",
+                }
+              }
             >
-              Wedding
+              {translate(lang, "Wedding", "Programme")}
             </div>
 
             <div
+              style={
+                lang === "fr" && {
+                  fontSize: "1em",
+                }
+              }
               onClick={() => {
                 document
                   .getElementById("Program")
                   .scrollIntoView({ behavior: "smooth", block: "center" });
               }}
             >
-              Program
+              {translate(lang, "Program", "de mariage")}
             </div>
           </div>
 
@@ -59,7 +73,7 @@ export default function Menu() {
                   .scrollIntoView({ behavior: "smooth", block: "center" });
               }}
             >
-              Hotels
+              {translate(lang, "Hotels", "Hôtels")}
             </div>
             <div
               onClick={() => {
@@ -68,7 +82,7 @@ export default function Menu() {
                   .scrollIntoView({ behavior: "smooth", block: "center" });
               }}
             >
-              Shuttle
+              {translate(lang, "Shuttle", "Navettes")}
             </div>
           </div>
         </div>
