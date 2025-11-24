@@ -221,10 +221,10 @@ h3 {
     font-size: 22px;
   }
   .header .title {
-    padding-top: 0;
+    padding-top: 60px;
   }
   .menu-container {
-    top: 260px;
+    top: 340px;
     right: 0;
     left: 0;
     position: absolute;
