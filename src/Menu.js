@@ -3,7 +3,7 @@
 
 import React from "react";
 import LangContext from "./LangContext.js";
-import { translate } from "./utils.js";
+import translate from "./utils.js";
 export default function Menu() {
   const lang = React.useContext(LangContext);
   const [displayed, setDisplayed] = React.useState(1);

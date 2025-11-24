@@ -3,13 +3,13 @@ import React from "react";
 import Hotels from "./Hotels.js";
 import Menu from "./Menu.js";
 import Timeline from "./Timeline.js";
-import { translate } from "./utils.js";
+import translate from "./utils.js";
 import LangContext from "./LangContext.js";
 
 export default function App() {
-  const [lang, setLang] = React.useState("fr");
+  const [lang, setLang] = React.useState("en");
   React.useEffect(() => {
-    // setLang(navigator.language === "fr" ? "fr" : "en");
+    setLang(navigator.language === "fr" ? "fr" : "en");
   }, []);
   return (
     <LangContext.Provider value={lang}>
