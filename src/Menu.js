@@ -3,7 +3,7 @@
 
 import React from "react";
 import LangContext from "./LangContext.js";
-import translate from "./utils.js";
+import { translate } from "./utils.js";
 export default function Menu() {
   const lang = React.useContext(LangContext);
   const [displayed, setDisplayed] = React.useState(1);
@@ -41,9 +41,11 @@ export default function Menu() {
                   .scrollIntoView({ behavior: "smooth", block: "center" });
               }}
               style={
-                lang === "fr" && {
-                  fontSize: "1em",
-                }
+                lang === "fr"
+                  ? {
+                      fontSize: "1em",
+                    }
+                  : {}
               }
             >
               {translate(lang, "Wedding", "Programme")}
@@ -51,9 +53,11 @@ export default function Menu() {
 
             <div
               style={
-                lang === "fr" && {
-                  fontSize: "1em",
-                }
+                lang === "fr"
+                  ? {
+                      fontSize: "1em",
+                    }
+                  : {}
               }
               onClick={() => {
                 document
