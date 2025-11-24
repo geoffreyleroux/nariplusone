@@ -5,9 +5,8 @@ import classnames from "classnames";
 import { InView } from "react-intersection-observer";
 
 export const VerticalTimelineElement = ({
-  children = "",
+  children = null,
   className = "",
-  contentArrowStyle = null,
   contentStyle = null,
   date = "",
   image = undefined,
@@ -91,10 +90,7 @@ export const VerticalTimelineElement = ({
 );
 
 VerticalTimelineElement.propTypes = {
-  children: PropTypes.oneOfType([
-    PropTypes.arrayOf(PropTypes.node),
-    PropTypes.node,
-  ]),
+  children: PropTypes.string,
   className: PropTypes.string,
   contentArrowStyle: PropTypes.shape({}),
   contentStyle: PropTypes.shape({}),
