@@ -5,6 +5,7 @@ import Menu from "./Menu.js";
 import Timeline from "./Timeline.js";
 import { translate } from "./utils.js";
 import LangContext from "./LangContext.js";
+import Shuttles from "./Shuttles.js";
 
 export default function App() {
   const [lang, setLang] = React.useState("en");
@@ -28,7 +29,11 @@ export default function App() {
         <Timeline />
 
         <div id="Hotels">
-          <Hotels></Hotels>
+          <Hotels />
+        </div>
+
+        <div id="Shuttles">
+          <Shuttles />
         </div>
       </div>
     </LangContext.Provider>

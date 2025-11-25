@@ -33,7 +33,7 @@ export default function Menu() {
           <img src="ribbon.png" />
         </div>
         <div>
-          <div className="weddingProgram">
+          <div className="weddingProgram clickable">
             <div
               onClick={() => {
                 document
@@ -69,7 +69,7 @@ export default function Menu() {
             </div>
           </div>
 
-          <div className="hotelShuttle">
+          <div className="hotelShuttle clickable">
             <div
               onClick={() => {
                 document

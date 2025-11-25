@@ -10,6 +10,11 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  letter-spacing: 1px !important;
+}
+
+.clickable {
+  cursor: pointer;
 }
 
 a {
@@ -43,28 +48,6 @@ body {
   display: block;
 }
 
-.header .title {
-  padding-top: 140px;
-  z-index: 1;
-  width: 100vw;
-  display: flex;
-  flex-direction: row;
-  position: absolute;
-  justify-content: center;
-}
-
-.header h2 {
-  margin: 0;
-  line-height: 143px;
-}
-
-.header p {
-  color: black;
-  z-index: 1;
-  font-size: 3em;
-  width: 100%;
-  font-weight: 500;
-}
 .menu-container {
   position: relative;
   display: flex;
@@ -188,16 +171,40 @@ h3 {
   position: relative;
   z-index: 2;
 }
+.title h2 {
+  margin: 0;
+  margin-top: 50px;
+}
 
+.header .title {
+  padding-top: 140px;
+  z-index: 1;
+  width: 100vw;
+  display: flex;
+  flex-direction: row;
+  position: absolute;
+  justify-content: center;
+}
+
+.title p {
+  color: black;
+  z-index: 1;
+  line-height: 90px;
+  font-size: 2em;
+  width: 100%;
+  font-weight: 500;
+}
 @media only screen and (max-width: 1200px) {
   .castle {
     height: 9em;
   }
-  .header h2 {
-    font-size: 40px;
-  }
   .title p {
-    line-height: 90px;
+    line-height: 80px;
+  }
+  .title h2 {
+    margin: 0;
+    font-size: 55px;
+    margin-top: 30px;
   }
 }
 @media only screen and (max-width: 900px) {
@@ -205,19 +212,24 @@ h3 {
     height: 7em;
   }
   .title p {
-    line-height: 72px;
+    line-height: 90px;
   }
-  .header h2 {
+  .title h2 {
+    margin: 0;
     line-height: 1;
-    font-size: 30px;
+    font-size: 55px;
   }
 }
 @media only screen and (max-width: 700px) {
   * {
-    font-size: 12px;
+    font-size: 20px;
+  }
+  .title h2 {
+    margin: 0;
   }
   #Hotels p,
-  #Hotels a {
+  #Hotels a,
+  #Shuttles p {
     font-size: 22px;
   }
   .header .title {

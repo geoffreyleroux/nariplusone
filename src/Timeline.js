@@ -36,8 +36,14 @@ export default function Timeline() {
           position="right"
           contentStyle={contentStyle}
           date="15:00"
+          className="clickable"
           iconStyle={iconStyle}
-          image={"hotel.png"}
+          image={"hotelbookhere.png"}
+          onTimelineElementClick={() => {
+            document
+              .getElementById("Hotels")
+              .scrollIntoView({ behavior: "smooth", block: "center" });
+          }}
         >
           <h3 className="vertical-timeline-element-title">
             {translate(lang, "Checkin at the hotels", "Checkin à l'hôtel")}

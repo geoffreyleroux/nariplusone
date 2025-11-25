@@ -52,16 +52,30 @@ export default function Hotels() {
       }}
     >
       <img src="hotel.png" />
-      <h1 style={{ margin: 0, lineHeight: 1 }}>
+      <h2
+        style={{
+          margin: 0,
+          lineHeight: "60px",
+          fontWeight: 100,
+          fontSize: "3em",
+        }}
+      >
         {translate(lang, "HOTEL RESERVATION", "RÉSERVATION D'HÔTEL")}
-      </h1>
-      <h3 style={{ marginBottom: "40px", lineHeight: 1 }}>
+      </h2>
+      <p style={{ lineHeight: "30px", margin: 0 }}>
         {translate(
           lang,
           "RECOMMEND BOOKING TO ENJOY THE PARTY",
           "RESERVEZ UN HÔTEL POUR PROFITER DE LA SOIRÉE"
         )}
-      </h3>
+      </p>
+      <p style={{ marginBottom: "30px", lineHeight: "20px" }}>
+        {translate(
+          lang,
+          "CLICK BELOW FOR DIRECT PAGE",
+          "CLIQUEZ CI-DESSOUS POUR RÉSERVER L'HÔTEL "
+        )}
+      </p>
       <div>
         {data.map((hotel) => {
           return (
