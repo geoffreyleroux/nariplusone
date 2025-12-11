@@ -65,8 +65,17 @@ body {
 
 .menu-container * {
   color: black;
-  font-size: 1.3em;
+  font-size: 1.2em;
   text-decoration: none !important;
+}
+.arrow-container {
+  position: absolute;
+  left: -300px;
+  bottom: 0;
+}
+.arrow {
+  width: 80px !important;
+  height: auto !important;
 }
 .weddingProgram {
   margin-right: 20px;
@@ -78,6 +87,14 @@ body {
   line-height: 50px;
   flex-direction: column;
   display: flex;
+}
+.shuttle-images img {
+  width: auto;
+  height: 120px;
+}
+.shuttle-images {
+  display: flex;
+  flex-direction: row;
 }
 .menu-container {
   position: absolute;
@@ -206,6 +223,12 @@ h3 {
     font-size: 55px;
     margin-top: 30px;
   }
+
+  .arrow-container {
+    position: absolute;
+    left: -100px;
+    bottom: 0;
+  }
 }
 @media only screen and (max-width: 900px) {
   .castle {
@@ -219,6 +242,17 @@ h3 {
     line-height: 1;
     font-size: 55px;
   }
+
+  .arrow-container {
+    position: absolute;
+    left: -80px;
+    bottom: 0;
+  }
+
+  .shuttle-images img {
+    width: auto;
+    height: 90px;
+  }
 }
 @media only screen and (max-width: 700px) {
   * {
@@ -227,6 +261,20 @@ h3 {
   .title h2 {
     margin: 0;
   }
+
+  .arrow-container {
+    position: relative;
+    display: flex;
+    width: 100%;
+    left: 0;
+    justify-content: center;
+  }
+
+  .arrow {
+    position: relative;
+    display: flex;
+  }
+
   #Hotels p,
   #Hotels a,
   #Shuttles p {

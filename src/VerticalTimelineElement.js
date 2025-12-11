@@ -51,7 +51,7 @@ export const VerticalTimelineElement = ({
               {
                 "bounce-in": inView || visible,
                 "is-hidden": !(inView || visible),
-              }
+              },
             )}
           >
             {icon}
@@ -61,14 +61,14 @@ export const VerticalTimelineElement = ({
             onClick={onTimelineElementClick}
             className={classnames(
               textClassName,
-              "vertical-timeline-element-content"
+              "vertical-timeline-element-content",
             )}
           >
             <span
               style={{ textTransform: "uppercase" }}
               className={classnames(
                 dateClassName,
-                "vertical-timeline-element-date"
+                "vertical-timeline-element-date",
               )}
             >
               {date}
@@ -78,7 +78,7 @@ export const VerticalTimelineElement = ({
             <img
               className={classnames(
                 imageClassName,
-                "vertical-timeline-element-image"
+                "vertical-timeline-element-image",
               )}
               src={image}
             />

@@ -1,6 +1,3 @@
-/* eslint-disable react/jsx-no-target-blank */
-/* eslint-disable jsx-a11y/alt-text */
-
 import React from "react";
 import LangContext from "./LangContext.js";
 import { translate } from "./utils.js";
@@ -89,6 +86,9 @@ export default function Menu() {
               {translate(lang, "Shuttle Service", "Navettes")}
             </div>
           </div>
+        </div>
+        <div className="arrow-container">
+          <img className="arrow" src="arrow.png" />
         </div>
       </div>
     </>

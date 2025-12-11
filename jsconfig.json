@@ -1,9 +1,11 @@
 {
   "compilerOptions": {
-    "module": "nodenext",
-    "jsx": "preserve",
-    "checkJs": true,
-    "moduleResolution": "nodenext"
+    "baseUrl": ".",
+    "paths": {
+      "$libs": ["src/libs"],
+      "$libs/*": ["src/libs/*"]
+    }
   },
-  "exclude": ["node_modules", "**/node_modules/*"]
+  "include": ["src/**/*.d.ts", "src/**/*.js", "src/**/*.svelte"],
+  "exclude": ["node_modules", "**/node_modules", "dist"]
 }

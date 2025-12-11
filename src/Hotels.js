@@ -66,14 +66,14 @@ export default function Hotels() {
         {translate(
           lang,
           "RECOMMEND BOOKING TO ENJOY THE PARTY",
-          "RESERVEZ UN HÔTEL POUR PROFITER DE LA SOIRÉE"
+          "RESERVEZ UN HÔTEL POUR PROFITER DE LA SOIRÉE",
         )}
       </p>
       <p style={{ marginBottom: "30px", lineHeight: "20px" }}>
         {translate(
           lang,
           "CLICK BELOW FOR DIRECT PAGE",
-          "CLIQUEZ CI-DESSOUS POUR RÉSERVER L'HÔTEL "
+          "CLIQUEZ CI-DESSOUS POUR RÉSERVER L'HÔTEL ",
         )}
       </p>
       <div>

@@ -64,13 +64,10 @@ export default function Hotels() {
       }}
     >
       <div
-        style={{
-          display: "flex",
-          flexDirection: "row",
-        }}
+        className="shuttle-images"
       >
-        <img style={{ height: "120px", width: "auto" }} src="bus.png" />
-        <img style={{ height: "120px", width: "auto" }} src="van.png" />
+        <img src="bus.png" />
+        <img src="van.png" />
       </div>
 
       <h2
@@ -88,7 +85,7 @@ export default function Hotels() {
         {translate(
           lang,
           "FOR THOSE WHO ARE STAYING AT THE HOTEL",
-          "POUR CEUX QUI DORMENT À L'HÔTEL"
+          "POUR CEUX QUI DORMENT À L'HÔTEL",
         )}
       </p>
 
