@@ -77,7 +77,7 @@ export default function Menu() {
                   .scrollIntoView({ behavior: "smooth", block: "center" });
               }}
             >
-              {translate(lang, "Hotels", "Hôtels")}
+              {translate(lang, "Book Hotels", "Hôtels")}
             </div>
             <div
               onClick={() => {
@@ -86,7 +86,7 @@ export default function Menu() {
                   .scrollIntoView({ behavior: "smooth", block: "center" });
               }}
             >
-              {translate(lang, "Shuttle", "Navettes")}
+              {translate(lang, "Shuttle Service", "Navettes")}
             </div>
           </div>
         </div>
