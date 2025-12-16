@@ -56,7 +56,7 @@ body {
 }
 .menu-container img {
   display: flex;
-  width: 100%;
+  width: 380px;
 }
 .menu-container > div {
   display: flex;
@@ -188,19 +188,20 @@ h3 {
   position: relative;
   z-index: 2;
 }
+
 .title h2 {
   margin: 0;
   margin-top: 50px;
 }
 
-.header .title {
-  padding-top: 140px;
+.title {
+  padding-top: 140px; 
   z-index: 1;
   width: 100vw;
   display: flex;
   flex-direction: row;
   position: absolute;
-  justify-content: center;
+  justify-content: space-evenly;
 }
 
 .title p {
@@ -271,6 +272,8 @@ h3 {
   }
 
   .arrow {
+    width: 50px !important;
+    margin-top: 40px;
     position: relative;
     display: flex;
   }
@@ -294,7 +297,7 @@ h3 {
     align-items: center;
   }
   .menu-container img {
-    width: 190px;
+    width: 250px;
   }
   .menu-container * {
     color: black;

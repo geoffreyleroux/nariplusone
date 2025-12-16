@@ -465,6 +465,7 @@
 .bus {
   width: 310px;
   top: -27px;
+  left: 102%;
 }
 
 img {
@@ -475,6 +476,11 @@ img {
 .vertical-timeline-element-subtitle,
 h5 {
   letter-spacing: 2px;
+}
+
+.van {
+  width: 180px;
+  top: -50px;
 }
 @media only screen and (max-width: 1200px) {
   .vertical-timeline-element--left .vertical-timeline-element-content {
@@ -518,11 +524,16 @@ h5 {
   .bus {
     top: -10px;
     left: 111%;
+    width: 280px;
   }
   .welcome {
     top: -20px;
   }
 
+  .van {
+    width: 180px;
+    top: -50px;
+  }
   .us {
     top: -40px;
   }
@@ -535,6 +546,9 @@ h5 {
   }
 }
 @media only screen and (max-width: 700px) {
+  .vertical-timeline-element {
+    margin: 3em 0;
+  }
   .vertical-timeline-element--left .vertical-timeline-element-content {
     margin-left: 0;
   }
@@ -570,7 +584,7 @@ h5 {
   }
 
   .vertical-timeline-element-image {
-    left: 120%;
+    left: 125%;
     top: -30px;
     width: 80px;
   }
@@ -580,7 +594,7 @@ h5 {
   .bus {
     top: -10px;
     width: 120px;
-    left: 114%;
+    left: 117%;
   }
   .welcome {
     width: 120px;

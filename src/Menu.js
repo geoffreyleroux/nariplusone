@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/alt-text */
 import React from "react";
 import LangContext from "./LangContext.js";
 import { translate } from "./utils.js";
@@ -79,7 +80,7 @@ export default function Menu() {
             <div
               onClick={() => {
                 document
-                  .getElementById("Shuttle")
+                  .getElementById("Shuttles")
                   .scrollIntoView({ behavior: "smooth", block: "center" });
               }}
             >

@@ -64,7 +64,7 @@ export default function Timeline() {
           <h5>CHÂTEAU DE CHAMPLÂTREUX D316, 95270 ÉPINAY-CHAMPLÂTREUX</h5> */}
         </VerticalTimelineElement>
         <VerticalTimelineElement
-          date="17:00 - 17:45"
+          date="17:00"
           position="right"
           iconStyle={iconStyle}
           image="us.png"
@@ -76,7 +76,7 @@ export default function Timeline() {
           </h3>
         </VerticalTimelineElement>
         <VerticalTimelineElement
-          date="17:45 - 19:00"
+          date="18:00"
           position="left"
           iconStyle={iconStyle}
           contentStyle={contentStyle}
@@ -87,18 +87,18 @@ export default function Timeline() {
           </h3>
         </VerticalTimelineElement>
         <VerticalTimelineElement
-          date="19:30 - 21:00"
+          date="19:30"
           position="right"
           iconStyle={iconStyle}
           contentStyle={contentStyle}
           image={"dinner.png"}
         >
           <h3 className="vertical-timeline-element-title">
-            {translate(lang, "Dinner", "Dîner")}
+            {translate(lang, "Dinner reception", "Dîner")}
           </h3>
-        </VerticalTimelineElement>{" "}
+        </VerticalTimelineElement>
         <VerticalTimelineElement
-          date="21:00 - 3:00"
+          date="21:30"
           position="left"
           iconStyle={iconStyle}
           contentStyle={contentStyle}
@@ -106,6 +106,52 @@ export default function Timeline() {
         >
           <h3 className="vertical-timeline-element-title">
             {translate(lang, "AFTER PARTY", "Soirée")}
+          </h3>
+        </VerticalTimelineElement>
+        <VerticalTimelineElement
+          date="24:00"
+          position="right"
+          iconStyle={iconStyle}
+          contentStyle={contentStyle}
+          imageClassName="van"
+          image={"van.png"}
+        >
+          <h3 className="vertical-timeline-element-title">
+            {translate(
+              lang,
+              "shuttle fleet start going to hotels",
+              "Navettes disponibles pour les hôtels"
+            )}
+          </h3>
+        </VerticalTimelineElement>
+        <VerticalTimelineElement
+          date="01:00"
+          position="left"
+          iconStyle={iconStyle}
+          imageClassName="bus"
+          contentStyle={contentStyle}
+          image={"bus.png"}
+        >
+          <h3 className="vertical-timeline-element-title">
+            {translate(
+              lang,
+              "shuttle going back to paris",
+              "Depart du bus pour Paris"
+            )}
+          </h3>
+        </VerticalTimelineElement>
+        <VerticalTimelineElement
+          date="03:00"
+          position="right"
+          iconStyle={iconStyle}
+          contentStyle={contentStyle}
+        >
+          <h3 className="vertical-timeline-element-title">
+            {translate(
+              lang,
+              "afterpary finishing",
+              "fin de la soirée"
+            )}
           </h3>
         </VerticalTimelineElement>
       </VerticalTimeline>
