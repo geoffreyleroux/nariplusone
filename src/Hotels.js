@@ -12,29 +12,33 @@ export default function Hotels() {
     {
       name: "NOVOTEL MAFFLIERS **** ",
       link: "https://all.accor.com/hotel/0383/index.fr.shtml",
-      tel: "+33134083535",
-      desc: ` 10km`,
+      tel: "+33 1 34 08 35 35",
+      desc: ` 10km | 17min`,
+      extraEN:
+        "For Korean and International guests, please contact us for booking",
+      extraKR:
+        "한국 및 해외에서 오시는 분들을 위한 호텔입니다. 예약 전 저희에게 문의주세요",
       img: "novotel.png",
     },
     {
       name: "HÔTEL MERCURE CHANTILLY **** ",
       link: "https://all.accor.com/hotel/B4C3/index.fr.shtml",
-      tel: "+33344584777",
-      desc: ` 18km`,
+      tel: "+33 3 44 58 47 77",
+      desc: ` 18km | 30min`,
       img: "mercure.png",
     },
     {
       name: "CHÂTEAU DE LA TOUR *** ",
       link: "https://reservations.hotelspreference.com/?adult=2&arrive=2026-07-12&chain=5460&child=0&currency=EUR&depart=2026-07-13&hotel=75790&level=hotel&locale=fr-FR&productcurrency=EUR&rooms=1",
-      tel: "+33344623838",
-      desc: ` 14km`,
+      tel: "+33 3 44 62 38 38",
+      desc: ` 14km | 23min `,
       img: "latour.png",
     },
     {
       name: "LE DOMAINE DES VANNEAUX **** ",
       link: "https://all.accor.com/hotel/B4D0/index.fr.shtml",
-      tel: "+33124084060",
-      desc: ` 19km`,
+      tel: "+33 1 24 08 40 60",
+      desc: ` 19km | 20min`,
       img: "vanneaux.png",
     },
   ];
@@ -74,71 +78,114 @@ export default function Hotels() {
           "CLIQUEZ CI-DESSOUS POUR RÉSERVER L'HÔTEL "
         )}
       </p>
+      <p>
+        {translate(
+          lang,
+          "RETURN SHUTTLES FROM THE CHATEAU TO THE HOTELS WILL OPERATE FROM MIDNIGHT UNTIL 3:00.",
+          "DES NAVETTES ASSURANT LA LIAISON ENTRE LE CHÂTEAU ET LES HÔTELS CIRCULERONT DE MINUIT À 3H00."
+        )}
+      </p>
       <div>
         {data.map((hotel) => {
           return (
-            <div
-              style={{
-                display: "flex",
-                flexDirection: "row",
-                marginBottom: "20px",
-                alignItems: "center",
-              }}
-            >
+            <>
               <div
                 style={{
                   display: "flex",
-                  marginRight: "20px",
-                  flexDirection: "column",
+                  flexDirection: "row",
+                  marginBottom: "20px",
+                  alignItems: "center",
                 }}
               >
-                <img
-                  style={{
-                    width: "100px",
-                    height: "100px",
-                  }}
-                  src={hotel.img}
-                />
-              </div>
-              <div
-                style={{
-                  display: "flex",
-                  flexDirection: "column",
-                }}
-              >
-                <p
+                <div
                   style={{
                     display: "flex",
-                    width: "100%",
-                    margin: 0,
-                    lineHeight: 1,
+                    marginRight: "20px",
+                    flexDirection: "column",
                   }}
                 >
-                  <a
-                    style={{ textAlign: "left", fontSize: "1.6em" }}
-                    href={hotel.link}
-                    target="_blank"
+                  <img
+                    style={{
+                      width: "140px",
+                      height: "140px",
+                    }}
+                    src={hotel.img}
+                  />
+                </div>
+                <div
+                  style={{
+                    display: "flex",
+                    flexDirection: "column",
+                  }}
+                >
+                  <p
+                    style={{
+                      display: "flex",
+                      width: "100%",
+                      margin: 0,
+                      lineHeight: 1,
+                    }}
                   >
-                    {hotel.name}
-                  </a>
-                </p>
-                <p
-                  style={{
-                    display: "flex",
-                    width: "100%",
-                    margin: 0,
-                    textAlign: "left",
-                    lineHeight: 1,
-                  }}
-                >
-                  {hotel.desc}
-                  {" | "}
-                  <a inputMode="tel" target="_blank" href={`tel:${hotel.tel}`}>
-                    {hotel.tel}
-                  </a>
-                </p>
+                    <a
+                      className="clickable"
+                      style={{ textAlign: "left", fontSize: "1.6em" }}
+                      href={hotel.link}
+                      target="_blank"
+                    >
+                      {hotel.name}
+                    </a>
+                  </p>
+                  <p
+                    style={{
+                      display: "flex",
+                      width: "100%",
+                      margin: 0,
+                      textAlign: "left",
+                      lineHeight: 1,
+                    }}
+                  >
+                    {hotel.desc}
+                    {" |"}
+                    <a
+                      className="clickable"
+                      inputMode="tel"
+                      target="_blank"
+                      href={`tel:${hotel.tel}`}
+                    >
+                      &nbsp;{hotel.tel}
+                    </a>
+                  </p>
+                  {hotel.extraEN && (
+                    <p
+                      style={{
+                        display: "flex",
+                        flexDirection: "row",
+                        alignItems: "center",
+                        color: "red",
+                        marginBottom: "4px",
+                        lineHeight: 1,
+                      }}
+                    >
+                      <i> {hotel.extraEN}</i>
+                    </p>
+                  )}
+                  {hotel.extraKR && (
+                    <p
+                      style={{
+                        display: "flex",
+                        flexDirection: "row",
+                        alignItems: "center",
+                        color: "red",
+                        fontSize: "16px",
+                        lineHeight: 1,
+                      }}
+                    >
+                      {hotel.extraKR}
+                    </p>
+                  )}
+                </div>
               </div>
-            </div>
+            </>
           );
         })}
       </div>

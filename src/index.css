@@ -18,6 +18,7 @@
 }
 
 a {
+  cursor: pointer;
   text-decoration: none;
   color: black;
 }
@@ -195,7 +196,7 @@ h3 {
 }
 
 .title {
-  padding-top: 140px; 
+  padding-top: 140px;
   z-index: 1;
   width: 100vw;
   display: flex;

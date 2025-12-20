@@ -18,7 +18,7 @@ export default function Timeline() {
   const iconStyle = { background: "black", color: "black" };
 
   return (
-    <div style={{ marginTop: "50px" }} id="Program">
+    <div style={{ marginTop: "200px" }} id="Program">
       <VerticalTimeline layout="2-columns" lineColor="black" animate={false}>
         <VerticalTimelineElement
           position="left"

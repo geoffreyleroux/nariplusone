@@ -33,7 +33,7 @@ export default function App() {
         </div>
 
         <div id="Shuttles">
-          <Shuttles />
+          {/* <Shuttles /> */}
         </div>
       </div>
     </LangContext.Provider>

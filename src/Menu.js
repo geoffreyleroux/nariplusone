@@ -84,7 +84,7 @@ export default function Menu() {
                   .scrollIntoView({ behavior: "smooth", block: "center" });
               }}
             >
-              {translate(lang, "Shuttle Service", "Navettes")}
+              {translate(lang, "RSVP", "RSVP")}
             </div>
           </div>
         </div>
