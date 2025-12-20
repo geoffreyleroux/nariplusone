@@ -78,7 +78,7 @@ export default function Hotels() {
           "CLIQUEZ CI-DESSOUS POUR RÉSERVER L'HÔTEL "
         )}
       </p>
-      <p>
+      <p style={{ padding: "0 1em", textAlign: "center", lineHeight: 1 }}>
         {translate(
           lang,
           "RETURN SHUTTLES FROM THE CHATEAU TO THE HOTELS WILL OPERATE FROM MIDNIGHT UNTIL 3:00.",

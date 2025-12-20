@@ -77,14 +77,14 @@ export default function Menu() {
             >
               {translate(lang, "Book Hotels", "Hôtels")}
             </div>
-            <div
-              onClick={() => {
-                document
-                  .getElementById("Shuttles")
-                  .scrollIntoView({ behavior: "smooth", block: "center" });
-              }}
-            >
-              {translate(lang, "RSVP", "RSVP")}
+            <div>
+              <a
+                href="https://docs.google.com/forms/d/e/1FAIpQLScWlLrrtQrPUsCDkzkaAGL2WrYFMp_t5ldL_W8q1xeqVFriag/viewform?usp=dialog"
+                target="_blank"
+                rel="noreferrer"
+              >
+                {translate(lang, "RSVP", "RSVP")}
+              </a>
             </div>
           </div>
         </div>
