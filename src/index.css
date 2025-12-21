@@ -277,6 +277,11 @@ h3 {
 .hotelList {
   margin-top: 40px;
 }
+
+.ribbon-castle {
+  display: none !important;
+}
+
 @media only screen and (max-width: 1200px) {
   .castle {
     height: 9em;
@@ -466,6 +471,7 @@ h3 {
     left: 0;
   }
 }
+
 @media only screen and (max-width: 500px) {
   .venueInfos p,
   .venueInfos p span {
@@ -474,7 +480,25 @@ h3 {
     line-height: 1;
     display: flex;
   }
-}
-.ribbon-castle {
-  display: none;
+  .header .title {
+    justify-content: center;
+    padding-top: 0px;
+  }
+  .title p {
+    line-height: 50px;
+    font-size: 1.5em;
+  }
+  .ribbon-castle {
+    width: 275px;
+  }
+  .header h2 {
+    line-height: 80px;
+    margin-top: 70px;
+    margin-left: 0;
+    text-align: center;
+    width: auto;
+  }
+  .menu-container {
+    top: 170px;
+  }
 }

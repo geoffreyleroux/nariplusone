@@ -41,7 +41,7 @@ export default function Timeline() {
             date="15:00"
             className="clickable"
             iconStyle={iconStyle}
-            image={"hotelbookhere.png"}
+            image={"hotelbookhere2.png"}
             onTimelineElementClick={() => {
               document
                 .getElementById("Hotels")
