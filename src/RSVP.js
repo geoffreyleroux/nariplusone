@@ -33,7 +33,7 @@ export default function RSVP() {
         </p>
       ) : (
         <p>
-          PLEASE FILL IN THAT{" "}
+          PLEASE FILL IN THIS{" "}
           <a
             href="https://docs.google.com/forms/d/e/1FAIpQLScWlLrrtQrPUsCDkzkaAGL2WrYFMp_t5ldL_W8q1xeqVFriag/viewform?usp=dialog"
             target="_blank"

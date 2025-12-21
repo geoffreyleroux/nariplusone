@@ -41,9 +41,12 @@ export default function Menu() {
               style={
                 lang === "fr"
                   ? {
+                      textAlign: "right",
                       fontSize: "1em",
                     }
-                  : {}
+                  : {
+                      textAlign: "right",
+                    }
               }
             >
               {translate(lang, "Wedding", "Programme")}
@@ -53,9 +56,12 @@ export default function Menu() {
               style={
                 lang === "fr"
                   ? {
+                      textAlign: "right",
                       fontSize: "1em",
                     }
-                  : {}
+                  : {
+                      textAlign: "right",
+                    }
               }
               onClick={() => {
                 document
@@ -75,7 +81,7 @@ export default function Menu() {
                   .scrollIntoView({ behavior: "smooth", block: "center" });
               }}
             >
-              {translate(lang, "Book Hotels", "Hôtels")}
+              {translate(lang, "Hotels", "Hôtels")}
             </div>
             <div>
               <a
@@ -88,6 +94,9 @@ export default function Menu() {
             </div>
           </div>
         </div>
+
+        <p className="moreInfo">CLICK FOR MORE INFO</p>
+
         <div className="arrow-container">
           <img className="arrow" src="arrow.png" />
         </div>

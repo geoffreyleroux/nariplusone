@@ -23,7 +23,7 @@ export default function Timeline() {
       <RSVP />
       <div id="Program">
         <VerticalTimeline layout="2-columns" lineColor="black" animate={false}>
-          <VerticalTimelineElement
+          {/* <VerticalTimelineElement
             position="left"
             contentStyle={contentStyle}
             date="14:00"
@@ -34,7 +34,7 @@ export default function Timeline() {
             <h3 className="vertical-timeline-element-title">
               {translate(lang, "Departure from Opéra", "Départ d'Opéra")}
             </h3>
-          </VerticalTimelineElement>
+          </VerticalTimelineElement> */}
           <VerticalTimelineElement
             position="right"
             contentStyle={contentStyle}
@@ -49,7 +49,7 @@ export default function Timeline() {
             }}
           >
             <h3 className="vertical-timeline-element-title">
-              {translate(lang, "Checkin at the hotels", "Checkin à l'hôtel")}
+              {translate(lang, "Check in at the hotels", "Checkin à l'hôtel")}
             </h3>
           </VerticalTimelineElement>
           <VerticalTimelineElement
@@ -94,6 +94,7 @@ export default function Timeline() {
             position="right"
             iconStyle={iconStyle}
             contentStyle={contentStyle}
+            imageClassName="dinner"
             image={"dinner.png"}
           >
             <h3 className="vertical-timeline-element-title">
@@ -112,12 +113,12 @@ export default function Timeline() {
             </h3>
           </VerticalTimelineElement>
           <VerticalTimelineElement
-            date="24:00"
+            date="00:00 - 03:00"
             position="right"
             iconStyle={iconStyle}
             contentStyle={contentStyle}
             imageClassName="van"
-            image={"van.png"}
+            image={"van2.png"}
           >
             <h3 className="vertical-timeline-element-title">
               {translate(
@@ -127,7 +128,7 @@ export default function Timeline() {
               )}
             </h3>
           </VerticalTimelineElement>
-          <VerticalTimelineElement
+          {/* <VerticalTimelineElement
             date="01:00"
             position="left"
             iconStyle={iconStyle}
@@ -142,11 +143,12 @@ export default function Timeline() {
                 "Depart du bus pour Paris"
               )}
             </h3>
-          </VerticalTimelineElement>
+          </VerticalTimelineElement> */}
           <VerticalTimelineElement
             date="03:00"
-            position="right"
+            position="left"
             iconStyle={iconStyle}
+            iconClassName="lastIcon"
             contentStyle={contentStyle}
           >
             <h3 className="vertical-timeline-element-title">

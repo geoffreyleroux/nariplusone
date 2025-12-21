@@ -67,7 +67,7 @@ export default function Hotels() {
         className="shuttle-images"
       >
         <img src="bus.png" />
-        <img src="van.png" />
+        <img src="van2.png" />
       </div>
 
       <h2

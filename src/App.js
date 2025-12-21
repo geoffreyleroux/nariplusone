@@ -17,11 +17,14 @@ export default function App() {
       <div className="nariplusone">
         <div className="header">
           <div className="venueInfos">
-            <div className="date">
+            <p className="date">
               {translate(lang, "12072026 SUNDAY", "DIMANCHE 12/07/2026")}
-            </div>
-            <div className="address">D316 95270 ÉPINAY-CHAMPLÂTREUX</div>
-            <div className="name">CHÂTEAU DE CHAMPLÂTREUX</div>
+            </p>
+            <p className="address">
+              <span>D316 95270</span>
+              <span>&nbsp;ÉPINAY-CHAMPLÂTREUX</span>
+            </p>
+            <p className="name">CHÂTEAU DE CHAMPLÂTREUX</p>
           </div>
           <Menu />
         </div>

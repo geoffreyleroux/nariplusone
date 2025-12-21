@@ -121,7 +121,7 @@
   position: absolute;
   top: 0;
   left: 18px;
-  height: 100%;
+  height: 96%;
   width: 3px;
   background: var(--line-color);
 }
@@ -458,8 +458,11 @@
   /* pointer-events: none; */
   top: -100px;
 }
+.lastIcon {
+  top: 6px;
+}
 .welcome {
-  width: 200px;
+  width: 250px;
   top: -27px;
 }
 .bus {
@@ -479,8 +482,9 @@ h5 {
 }
 
 .van {
-  width: 180px;
-  top: -50px;
+  width: 340px;
+  top: -80px;
+  right: 100% !important;
 }
 @media only screen and (max-width: 1200px) {
   .vertical-timeline-element--left .vertical-timeline-element-content {
@@ -518,31 +522,30 @@ h5 {
   }
 
   .us {
-    width: 120px;
-    top: -40px;
+    width: 170px;
+    top: -80px;
   }
   .bus {
     top: -10px;
     left: 111%;
     width: 280px;
   }
-  .welcome {
-    top: -20px;
+  .dinner {
+    width: 230px;
   }
 
   .van {
-    width: 180px;
+    width: 270px;
     top: -50px;
-  }
-  .us {
-    top: -40px;
+    right: 105% !important;
   }
   .bus {
     top: -10px;
     left: 111%;
   }
   .welcome {
-    top: -10px;
+    width: 260px;
+    top: -30px;
   }
 }
 @media only screen and (max-width: 700px) {

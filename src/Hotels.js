@@ -85,32 +85,13 @@ export default function Hotels() {
           "DES NAVETTES ASSURANT LA LIAISON ENTRE LE CHÂTEAU ET LES HÔTELS CIRCULERONT DE MINUIT À 3H00."
         )}
       </p>
-      <div>
+      <div className="hotelList">
         {data.map((hotel) => {
           return (
             <>
-              <div
-                style={{
-                  display: "flex",
-                  flexDirection: "row",
-                  marginBottom: "20px",
-                  alignItems: "center",
-                }}
-              >
-                <div
-                  style={{
-                    display: "flex",
-                    marginRight: "20px",
-                    flexDirection: "column",
-                  }}
-                >
-                  <img
-                    style={{
-                      width: "140px",
-                      height: "140px",
-                    }}
-                    src={hotel.img}
-                  />
+              <div className="hotelContainer">
+                <div className="hotelImgContainer">
+                  <img className="hotelImg" src={hotel.img} />
                 </div>
                 <div
                   style={{
@@ -118,14 +99,7 @@ export default function Hotels() {
                     flexDirection: "column",
                   }}
                 >
-                  <p
-                    style={{
-                      display: "flex",
-                      width: "100%",
-                      margin: 0,
-                      lineHeight: 1,
-                    }}
-                  >
+                  <p className="hotelDesc">
                     <a
                       className="clickable"
                       style={{ textAlign: "left", fontSize: "1.6em" }}
@@ -136,12 +110,9 @@ export default function Hotels() {
                     </a>
                   </p>
                   <p
+                    className="hotelDesc"
                     style={{
-                      display: "flex",
-                      width: "100%",
-                      margin: 0,
                       textAlign: "left",
-                      lineHeight: 1,
                     }}
                   >
                     {hotel.desc}
@@ -157,6 +128,7 @@ export default function Hotels() {
                   </p>
                   {hotel.extraEN && (
                     <p
+                      className="hotelDesc"
                       style={{
                         display: "flex",
                         flexDirection: "row",
@@ -171,6 +143,7 @@ export default function Hotels() {
                   )}
                   {hotel.extraKR && (
                     <p
+                      className="hotelDesc"
                       style={{
                         display: "flex",
                         flexDirection: "row",
