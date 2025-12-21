@@ -113,6 +113,7 @@ export default function Hotels() {
                     className="hotelDesc"
                     style={{
                       textAlign: "left",
+                      whiteSpace: "nowrap",
                     }}
                   >
                     {hotel.desc}
