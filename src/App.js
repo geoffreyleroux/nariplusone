@@ -6,7 +6,6 @@ import Timeline from "./Timeline.js";
 import { translate } from "./utils.js";
 import LangContext from "./LangContext.js";
 import RSVP from "./RSVP.js";
-// import Shuttles from "./Shuttles.js";
 
 export default function App() {
   const [lang, setLang] = React.useState("en");
