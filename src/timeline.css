@@ -548,9 +548,15 @@ h5 {
     top: -30px;
   }
 }
+@media only screen and (max-width: 900px) {
+  .vertical-timeline-element-title {
+    line-height: 30px !important;
+    white-space: pre-wrap;
+  }
+}
 @media only screen and (max-width: 700px) {
   .vertical-timeline-element {
-    margin: 3em 0;
+    margin: 4em 0;
   }
   .vertical-timeline-element--left .vertical-timeline-element-content {
     margin-left: 0;
@@ -589,10 +595,19 @@ h5 {
   .vertical-timeline-element-image {
     left: 125%;
     top: -30px;
-    width: 80px;
+    width: 130px;
   }
   .us {
+    top: -60px;
+  }
+
+  .vertical-timeline-element-title span {
+    font-size: 1em !important;
+  }
+  .van {
+    width: 170px;
     top: -40px;
+    right: 115% !important;
   }
   .bus {
     top: -10px;
@@ -600,7 +615,7 @@ h5 {
     left: 117%;
   }
   .welcome {
-    width: 120px;
+    width: 160px;
     top: -10px;
   }
 }

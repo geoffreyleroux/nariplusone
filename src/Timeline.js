@@ -49,7 +49,8 @@ export default function Timeline() {
             }}
           >
             <h3 className="vertical-timeline-element-title">
-              {translate(lang, "Check in at the hotels", "Checkin à l'hôtel")}
+              <span>{translate(lang, "Check in\n", "Checkin ")}</span>
+              <span>{translate(lang, "at the hotels", "à l'hôtel")}</span>
             </h3>
           </VerticalTimelineElement>
           <VerticalTimelineElement
@@ -63,8 +64,6 @@ export default function Timeline() {
             <h3 className="vertical-timeline-element-title">
               {translate(lang, "Arrival at the castle", "Arrivé au château")}
             </h3>
-            {/* <h4 className="vertical-timeline-element-subtitle">REFRESHMENTS</h4>
-          <h5>CHÂTEAU DE CHAMPLÂTREUX D316, 95270 ÉPINAY-CHAMPLÂTREUX</h5> */}
           </VerticalTimelineElement>
           <VerticalTimelineElement
             date="17:00"
@@ -121,11 +120,12 @@ export default function Timeline() {
             image={"van2.png"}
           >
             <h3 className="vertical-timeline-element-title">
-              {translate(
-                lang,
-                "shuttle fleet start going to hotels",
-                "Navettes disponibles pour les hôtels"
-              )}
+              <span>
+                {translate(lang, "shuttles start\n", "Navettes disponibles")}
+              </span>
+              <span>
+                {translate(lang, "going to hotels", "pour les hôtels")}
+              </span>
             </h3>
           </VerticalTimelineElement>
           {/* <VerticalTimelineElement

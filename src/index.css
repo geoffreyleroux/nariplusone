@@ -217,26 +217,6 @@ h3 {
   width: 100%;
   font-weight: 500;
 }
-@media only screen and (max-width: 1200px) {
-  .castle {
-    height: 9em;
-  }
-  .title p {
-    line-height: 115px;
-    font-size: 3.4em;
-  }
-  .title h2 {
-    margin: 0;
-    font-size: 55px;
-    margin-top: 30px;
-  }
-
-  .arrow-container {
-    position: absolute;
-    left: -100px;
-    bottom: 0;
-  }
-}
 
 .venueInfos {
   position: absolute;
@@ -297,6 +277,26 @@ h3 {
 .hotelList {
   margin-top: 40px;
 }
+@media only screen and (max-width: 1200px) {
+  .castle {
+    height: 9em;
+  }
+  .title p {
+    line-height: 115px;
+    font-size: 3.4em;
+  }
+  .title h2 {
+    margin: 0;
+    font-size: 55px;
+    margin-top: 30px;
+  }
+
+  .arrow-container {
+    position: absolute;
+    left: -100px;
+    bottom: 0;
+  }
+}
 @media only screen and (max-width: 900px) {
   .castle {
     height: 7em;
@@ -351,6 +351,9 @@ h3 {
     font-size: 20px;
   }
 
+  .moreInfo {
+    font-size: 22px !important ;
+  }
   .hotelImg {
     width: 120px;
     height: 120px;
@@ -392,11 +395,7 @@ h3 {
   }
 
   .arrow-container {
-    position: relative;
-    display: flex;
-    width: 100%;
-    left: 0;
-    justify-content: center;
+    display: none;
   }
 
   .arrow {
@@ -413,7 +412,7 @@ h3 {
   }
   .header .title {
     justify-content: center;
-    padding-top: 50px;
+    padding-top: 20px;
   }
 
   .title p {
@@ -421,7 +420,7 @@ h3 {
     font-size: 2em;
   }
   .menu-container {
-    top: 340px;
+    top: 240px;
     right: 0;
     left: 0;
     position: absolute;
@@ -450,7 +449,13 @@ h3 {
     width: auto;
   }
   .castle {
-    display: none;
+    display: none !important;
+  }
+  .ribbon {
+    display: none !important;
+  }
+  .ribbon-castle {
+    display: block;
   }
 
   .gif img {
@@ -460,4 +465,16 @@ h3 {
     top: 0;
     left: 0;
   }
+}
+@media only screen and (max-width: 500px) {
+  .venueInfos p,
+  .venueInfos p span {
+    font-weight: 100;
+    font-size: 20px;
+    line-height: 1;
+    display: flex;
+  }
+}
+.ribbon-castle {
+  display: none;
 }

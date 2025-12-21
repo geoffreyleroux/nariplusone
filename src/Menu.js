@@ -28,7 +28,8 @@ export default function Menu() {
       </div>
       <div className="menu-container">
         <div>
-          <img src="ribbon.png" />
+          <img className="ribbon-castle" src="castle.png" />
+          <img className="ribbon" src="ribbon.png" />
         </div>
         <div>
           <div className="weddingProgram clickable">
