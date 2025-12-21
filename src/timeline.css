@@ -121,7 +121,7 @@
   position: absolute;
   top: 0;
   left: 18px;
-  height: 96%;
+  height: 100%;
   width: 3px;
   background: var(--line-color);
 }
@@ -457,9 +457,6 @@
   width: 200px;
   /* pointer-events: none; */
   top: -100px;
-}
-.lastIcon {
-  top: 6px;
 }
 .welcome {
   width: 250px;

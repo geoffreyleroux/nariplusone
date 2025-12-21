@@ -17,7 +17,7 @@ export default function Hotels() {
       extraEN:
         "For Korean and International guests, please contact us for booking",
       extraKR:
-        "한국 및 해외에서 오시는 분들을 위한 호텔입니다. 예약 전 저희에게 문의주세요",
+        "한국 및 해외에서 오시는 분들을 위한 호텔입니다\n 예약 전 저희에게 문의주세요",
       img: "novotel.png",
     },
     {
@@ -143,7 +143,7 @@ export default function Hotels() {
                   )}
                   {hotel.extraKR && (
                     <p
-                      className="hotelDesc"
+                      className="hotelDesc extraKR"
                       style={{
                         display: "flex",
                         flexDirection: "row",
