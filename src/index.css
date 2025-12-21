@@ -460,7 +460,7 @@ h3 {
     display: none !important;
   }
   .ribbon-castle {
-    display: block;
+    display: block !important;
   }
 
   .gif img {
@@ -489,6 +489,7 @@ h3 {
     font-size: 1.5em;
   }
   .ribbon-castle {
+    display: block!important;
     width: 275px;
   }
   .header h2 {
