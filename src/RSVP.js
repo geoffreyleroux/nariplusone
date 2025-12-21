@@ -19,7 +19,7 @@ export default function RSVP() {
     >
       {lang === "fr" ? (
         <p>
-          MERCI DE RÉPONSE À CE{" "}
+          MERCI DE RÉPONDRE À CE{" "}
           <a
             href="https://docs.google.com/forms/d/e/1FAIpQLScWlLrrtQrPUsCDkzkaAGL2WrYFMp_t5ldL_W8q1xeqVFriag/viewform?usp=dialog"
             target="_blank"
@@ -29,7 +29,7 @@ export default function RSVP() {
           >
             FORMULAIRE
           </a>{" "}
-          AU PLUS TARD LE :
+          AU PLUS TARD LE 28 FEVRIER
         </p>
       ) : (
         <p>
@@ -43,7 +43,7 @@ export default function RSVP() {
           >
             FORM
           </a>{" "}
-          TO RSVP
+          BEFORE FEBRUARY 28TH
         </p>
       )}
     </div>

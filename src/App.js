@@ -8,9 +8,9 @@ import LangContext from "./LangContext.js";
 import RSVP from "./RSVP.js";
 
 export default function App() {
-  const [lang, setLang] = React.useState("en");
+  const [lang, setLang] = React.useState("fr");
   React.useEffect(() => {
-    setLang(navigator.language === "fr" ? "fr" : "en");
+    // setLang(navigator.language === "fr" ? "fr" : "en");
   }, []);
   return (
     <LangContext.Provider value={lang}>

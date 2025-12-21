@@ -96,7 +96,9 @@ export default function Menu() {
           </div>
         </div>
 
-        <p className="moreInfo">CLICK FOR MORE INFO</p>
+        <p className="moreInfo">
+              {translate(lang, "CLICK FOR MORE INFO", "CLIQUEZ POUR PLUS D'INFORMATIONS")}
+          </p>
 
         <div className="arrow-container">
           <img className="arrow" src="arrow.png" />
