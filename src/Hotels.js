@@ -46,7 +46,7 @@ export default function Hotels() {
   return (
     <div
       style={{
-        marginTop: "10em",
+        marginTop: "5em",
         display: "flex",
         flexDirection: "column",
         alignContent: "center",
@@ -141,7 +141,7 @@ export default function Hotels() {
                       <i> {hotel.extraEN}</i>
                     </p>
                   )}
-                  {hotel.extraKR && (
+                  {/* {hotel.extraKR && (
                     <p
                       className="hotelDesc extraKR"
                       style={{
@@ -155,7 +155,7 @@ export default function Hotels() {
                     >
                       {hotel.extraKR}
                     </p>
-                  )}
+                  )} */}
                 </div>
               </div>
             </>

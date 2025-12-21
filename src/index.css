@@ -502,8 +502,19 @@ h3 {
   .menu-container {
     top: 170px;
   }
-  .extraKR {
-    white-space: pre-line;
-    font-size: 12px!important;
+
+  .hotelImg {
+    width: 100px;
+    height: 100px;
   }
+  #Hotels p,
+  #Hotels a {
+    font-size: 20px !important;
+  }
+  .hotelContainer {
+    padding: 0 20px;
+  }
+  /* .extraKR {
+    font-size: 12px!important;
+  } */
 }
