@@ -29,8 +29,6 @@ export default function App() {
           <Menu />
         </div>
 
-        {/* <RSVP /> */}
-
         <Timeline />
 
         <div id="Hotels">
@@ -38,7 +36,6 @@ export default function App() {
         </div>
 
         <div id="RSVP">
-          {/* <Shuttles /> */}
           <RSVP />
         </div>
       </div>

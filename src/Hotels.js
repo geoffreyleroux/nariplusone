@@ -91,7 +91,9 @@ export default function Hotels() {
             <>
               <div className="hotelContainer">
                 <div className="hotelImgContainer">
-                  <img className="hotelImg" src={hotel.img} />
+                  <a href={hotel.link} target="_blank">
+                    <img className="hotelImg" src={hotel.img} />
+                  </a>
                 </div>
                 <div
                   style={{
