@@ -12,6 +12,20 @@ export default function App() {
   React.useEffect(() => {
     setLang(navigator.language === "fr" ? "fr" : "en");
   }, []);
+
+  function preloadImage(url) {
+    var img = new Image();
+    img.src = url;
+  }
+  React.useEffect(() => {
+    preloadImage("1.png");
+    preloadImage("2.png");
+    preloadImage("3.png");
+    preloadImage("4.png");
+    preloadImage("5.png");
+    preloadImage("6.png");
+  }, []);
+
   return (
     <LangContext.Provider value={lang}>
       <div className="nariplusone">
