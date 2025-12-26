@@ -32,13 +32,13 @@ export default function App() {
         <div className="header">
           <div className="venueInfos">
             <p className="date">
-              {translate(lang, "12072026 SUNDAY", "DIMANCHE 12/07/2026")}
-            </p>
-            <p className="address">
-              <span>D316 95270</span>
-              <span>&nbsp;ÉPINAY-CHAMPLÂTREUX</span>
+              {translate(lang, "12/07/2026 SUNDAY", "DIMANCHE 12/07/2026")}
             </p>
             <p className="name">CHÂTEAU DE CHAMPLÂTREUX</p>
+            <p className="address">
+              <span>ÉPINAY-CHAMPLÂTREUX</span>
+              <span>&nbsp;95270</span>
+            </p>
           </div>
           <Menu />
         </div>

@@ -49,7 +49,7 @@ export default function Timeline() {
             }}
           >
             <h3 className="vertical-timeline-element-title">
-              <span>{translate(lang, "Check in\n", "Arrivé ")}</span>
+              <span>{translate(lang, "Check in\n", "Arrivée ")}</span>
               <span>{translate(lang, "at the hotels", "à l'hôtel")}</span>
             </h3>
           </VerticalTimelineElement>
@@ -62,7 +62,7 @@ export default function Timeline() {
             imageClassName="welcome"
           >
             <h3 className="vertical-timeline-element-title">
-              {translate(lang, "Arrival at the castle", "Arrivé au château")}
+              {translate(lang, "Arrival at the castle", "Arrivée au château")}
             </h3>
           </VerticalTimelineElement>
           <VerticalTimelineElement

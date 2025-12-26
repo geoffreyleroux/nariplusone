@@ -241,10 +241,10 @@ h3 {
   text-align: left;
 }
 .name {
-  text-align: right;
+  text-align: center;
 }
 .address {
-  text-align: center;
+  text-align: right;
 }
 .rsvp {
   text-align: center;
@@ -306,6 +306,12 @@ h3 {
     height: 7em;
   }
 
+  .address span {
+    text-align: right;
+    display: flex;
+    justify-content: flex-end;
+  }
+
   .hotelImgContainer {
     margin-right: 0;
   }
@@ -328,9 +334,6 @@ h3 {
     position: absolute;
     left: -80px;
     bottom: 0;
-  }
-  .venueInfos span {
-    justify-content: center;
   }
   .venueInfos p,
   .venueInfos p span {
@@ -373,7 +376,7 @@ h3 {
   .venueInfos p,
   .venueInfos p span {
     font-weight: 100;
-    font-size: 30px;
+    font-size: 25px;
     line-height: 21px;
     display: flex;
   }
@@ -382,17 +385,21 @@ h3 {
     right: 20px;
     top: 10px;
   }
+  .address span {
+    text-align: right;
+    display: flex;
+    justify-content: flex-end;
+  }
   .address {
     line-height: 1;
-    flex: 1 1 100%;
-    text-align: center;
+    text-align: right;
   }
   .date {
     line-height: 1;
   }
   .name {
     line-height: 1;
-    text-align: right;
+    text-align: center;
   }
 
   .title h2 {
