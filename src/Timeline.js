@@ -20,6 +20,23 @@ export default function Timeline() {
 
   return (
     <>
+      <div
+        className="dresscode"
+        style={{
+          display: "flex",
+          flexDirection: "column",
+          alignContent: "center",
+          alignItems: "center",
+        }}
+      >
+        <i>
+          {translate(
+            lang,
+            "DRESS CODE: SUIT & DRESS",
+            "CODE VESTIMENTAIRE: COSTUME & ROBE"
+          )}
+        </i>
+      </div>
       <RSVP />
       <div id="Program">
         <VerticalTimeline layout="2-columns" lineColor="black" animate={false}>
