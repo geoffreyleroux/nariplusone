@@ -4,6 +4,7 @@
 import React from "react";
 import LangContext from "./LangContext";
 import { translate } from "./utils";
+import classNames from "classnames";
 
 export default function Hotels() {
   const lang = React.useContext(LangContext);
@@ -43,10 +44,11 @@ export default function Hotels() {
     },
     {
       name: "KYRIAD CHANTILLY SUD *** ",
-      link: "https://www.kyriad.com/rooms/?kameleoonEnabled=false&useSynXis=true&searchType=rooms&sr=METAGHAORGANIC&arrival=2025-12-29&departure=2025-12-30&hotelId=33185&adType=1&rooms%5B0%5D%5Badult%5D=2&rooms%5B0%5D%5Bchild%5D=0&utm_source=google-hpa&utm_medium=channel_connect_organic&utm_campaign=google-hpa-33185&utm_content=mapresults_29-12-2025_1_33185_FR_desktop_default___organic&src=goog_organic&gclsrc=&gclid=&filter=META&msclkid=&config=meta&adformat=&user_language=&user_currency=&hmGUID=b0e4afda-125d-43e1-8a4c-70adc1175228&resortCode=FRA21812",
+      link: "https://chantilly-sud-luzarches.kyriad.com/",
       tel: "+33 1 34 09 90 90",
       desc: ` 5km | 7min`,
-      // img: "vanneaux.png",
+      img: "kyriad.png",
+      displayClass: "kyriad",
     },
   ];
 
@@ -94,13 +96,13 @@ export default function Hotels() {
       </p>
       {lang === "fr" ? (
         <p style={{ padding: "0 1em", textAlign: "center", lineHeight: 1 }}>
-          DES NAVETTES ASSURANT LA LIAISON ENTRE LE CHÂTEAU ET <u>UNIQUEMENT CES HÔTELS</u> CIRCULERONT DE
-          MINUIT À 3H00.
+          DES NAVETTES ASSURANT LA LIAISON ENTRE LE CHÂTEAU ET{" "}
+          <u>UNIQUEMENT CES HÔTELS</u> CIRCULERONT DE MINUIT À 3H00.
         </p>
       ) : (
         <p style={{ padding: "0 1em", textAlign: "center", lineHeight: 1 }}>
-          RETURN SHUTTLES FROM THE CHATEAU TO <u>THESE HOTELS ONLY</u> WILL OPERATE FROM
-          MIDNIGHT TO 3:00.
+          RETURN SHUTTLES FROM THE CHATEAU TO <u>THESE HOTELS ONLY</u> WILL
+          OPERATE FROM MIDNIGHT TO 3:00.
         </p>
       )}
       <div className="hotelList">
@@ -108,7 +110,12 @@ export default function Hotels() {
           return (
             <>
               <div className="hotelContainer">
-                <div className="hotelImgContainer">
+                <div
+                  className={classNames(
+                    "hotelImgContainer",
+                    hotel.displayClass
+                  )}
+                >
                   <a href={hotel.link} target="_blank">
                     <img className="hotelImg" src={hotel.img} />
                   </a>
@@ -162,21 +169,6 @@ export default function Hotels() {
                       <i> {hotel.extraEN}</i>
                     </p>
                   )}
-                  {/* {hotel.extraKR && (
-                    <p
-                      className="hotelDesc extraKR"
-                      style={{
-                        display: "flex",
-                        flexDirection: "row",
-                        alignItems: "center",
-                        color: "red",
-                        fontSize: "16px",
-                        lineHeight: 1,
-                      }}
-                    >
-                      {hotel.extraKR}
-                    </p>
-                  )} */}
                 </div>
               </div>
             </>

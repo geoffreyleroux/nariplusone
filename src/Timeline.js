@@ -41,7 +41,7 @@ export default function Timeline() {
             date="15:00"
             className="clickable"
             iconStyle={iconStyle}
-            image={"hotelbookhere2.png"}
+            image={lang === "fr" ? "reservezici.png" : "hotelbookhere2.png"}
             onTimelineElementClick={() => {
               document
                 .getElementById("Hotels")
@@ -121,11 +121,13 @@ export default function Timeline() {
           >
             <h3 className="vertical-timeline-element-title">
               <span>
-                {translate(lang, "shuttles returning\n", "Navettes disponibles\n")}
+                {translate(
+                  lang,
+                  "shuttles returning\n",
+                  "Navettes disponibles\n"
+                )}
               </span>
-              <span>
-                {translate(lang, "to hotels", "vers les hôtels")}
-              </span>
+              <span>{translate(lang, "to hotels", "vers les hôtels")}</span>
             </h3>
           </VerticalTimelineElement>
           {/* <VerticalTimelineElement
