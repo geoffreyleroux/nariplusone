@@ -320,7 +320,7 @@
   .vertical-timeline-element-date {
   text-align: right;
   width: 100%;
-  color: black;
+  color: #000000c4;
   font-size: 1.6em;
   line-height: 1;
   margin-top: -9px;
@@ -406,7 +406,7 @@
 }
 
 .vertical-timeline * {
-  color: black;
+  color: #000000c4;
   /* // var(--color-text); */
 }
 .vertical-timeline-element-content-arrow {

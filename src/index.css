@@ -1,6 +1,6 @@
 :root {
   --color-primary: #d3a449; /* Desert Gold */
-  --color-secondary: #000000; /* Pitch Black */
+  --color-secondary: #000000; /* Pitch #000000c4 */
   --color-text: #3f50ae; /* Light Sand */
   --color-background: #ebe5d9; /* Dark Sand/Rock */
   --color-accent: #8b4513; /* Terracotta/Spice */
@@ -26,7 +26,7 @@ body {
   width: 100vw;
   font-family: "Palmore";
   background-color: var(--color-background);
-  color: black;
+  color: #000000c4;
   line-height: 1.6;
   font-size: 26px;
   scroll-behavior: smooth;
@@ -61,7 +61,7 @@ body {
 }
 
 .menu-container * {
-  color: black;
+  color: #000000c4;
   font-size: 60px;
   line-height: 47px;
   text-decoration: none !important;
@@ -78,7 +78,7 @@ body {
 .weddingProgram {
   margin-right: 20px;
   padding-right: 20px;
-  border-right: 1px solid black;
+  border-right: 1px solid #000000c4;
 }
 .weddingProgram,
 .hotelShuttle {
@@ -210,7 +210,7 @@ h3 {
   width: 100%;
 }
 .title p {
-  color: black;
+  color: #000000c4;
   z-index: 1;
   line-height: 160px;
   font-size: 4em;
@@ -255,8 +255,9 @@ h3 {
 .dresscode {
   margin-top: 2em;
   text-align: center;
+  font-weight: bold;
   line-height: 1;
-  font-size: 2em;
+  font-size: 2.2em;
 }
 
 .hotelImg {
@@ -468,7 +469,7 @@ h3 {
     width: 325px;
   }
   .menu-container * {
-    color: black;
+    color: #000000c4;
     font-size: 40px;
     line-height: 29px;
   }
