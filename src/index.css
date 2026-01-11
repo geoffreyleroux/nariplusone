@@ -331,7 +331,10 @@ h3 {
     margin-right: 0;
   }
   .rsvp {
-    margin: 1em 0;
+    font-size: 1.7em !important;
+  }
+
+  .dresscode i {
     font-size: 1.7em !important;
   }
 
@@ -388,6 +391,13 @@ h3 {
     width: 130px;
     margin-left: -7x;
     height: 130px;
+  }
+
+  .dresscode i {
+    font-size: 30px !important;
+  }
+  .rsvp {
+    white-space: pre;
   }
   .rsvp p,
   .rsvp a {

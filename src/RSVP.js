@@ -43,7 +43,7 @@ export default function RSVP() {
           >
             FORM
           </a>{" "}
-          BEFORE FEBRUARY 28TH
+          BEFORE {"\n"}FEBRUARY 28TH
         </p>
       )}
     </div>

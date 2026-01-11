@@ -18,7 +18,7 @@ export default function App() {
   React.useEffect(() => {
     const hasFrench = navigator.languages.includes("fr");
     console.log(navigator.languages)
-    setLang(hasFrench ? "fr" : "en");
+    setLang("en");
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [userLang]);
 
