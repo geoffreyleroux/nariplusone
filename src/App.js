@@ -9,9 +9,17 @@ import RSVP from "./RSVP.js";
 
 export default function App() {
   const [lang, setLang] = React.useState("fr");
+  var userLang = React.useMemo(
+    () => navigator.language || navigator.userLanguage,
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+    [navigator.language, navigator.userLanguage]
+  );
+
   React.useEffect(() => {
-    setLang(navigator.language === "fr" ? "fr" : "en");
-  }, []);
+    console.log(userLang);
+    setLang(userLang === "fr" ? "fr" : "en");
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [userLang]);
 
   function preloadImage(url) {
     var img = new Image();
