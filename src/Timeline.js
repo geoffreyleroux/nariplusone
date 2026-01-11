@@ -33,7 +33,7 @@ export default function Timeline() {
           {translate(
             lang,
             "DRESS CODE: SUIT & DRESS",
-            "CODE VESTIMENTAIRE: COSTUME & ROBE"
+            "CODE VESTIMENTAIRE : COSTUME & ROBE"
           )}
         </i>
       </div>
