@@ -23,6 +23,7 @@ a {
   color: black;
 }
 body {
+  overflow-x: hidden;
   width: 100vw;
   font-family: "Palmore";
   background-color: var(--color-background);
