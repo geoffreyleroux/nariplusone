@@ -31,7 +31,7 @@ export default function Hotels() {
     {
       name: "LE DOMAINE DES VANNEAUX **** ",
       link: "https://all.accor.com/hotel/B4D0/index.fr.shtml",
-      tel: "+33 1 24 08 40 60",
+      tel: "+33 1 34 08 40 60",
       desc: ` 19km | 20min`,
       img: "vanneaux.png",
     },
