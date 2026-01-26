@@ -29,7 +29,7 @@ export default function RSVP() {
           >
             FORMULAIRE
           </a>{" "}
-          AU PLUS TARD LE 28 FEVRIER
+          AU PLUS TARD LE 31 MARS
         </p>
       ) : (
         <p>
@@ -43,7 +43,7 @@ export default function RSVP() {
           >
             FORM
           </a>{" "}
-          BEFORE {"\n"}FEBRUARY 28TH
+          BEFORE {"\n"}MARCH 31ST
         </p>
       )}
     </div>

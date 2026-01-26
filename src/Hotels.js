@@ -11,22 +11,22 @@ export default function Hotels() {
 
   const data = [
     {
-      name: "NOVOTEL MAFFLIERS **** ",
-      link: "https://all.accor.com/hotel/0383/index.fr.shtml",
-      tel: "+33 1 34 08 35 35",
-      desc: ` 10km | 17min`,
-      extraEN:
-        "For Korean and International guests, please contact us for booking",
-      extraKR:
-        "한국 및 해외에서 오시는 분들을 위한 호텔입니다\n 예약 전 저희에게 문의주세요",
-      img: "novotel.png",
-    },
-    {
       name: "HÔTEL MERCURE CHANTILLY **** ",
       link: "https://all.accor.com/hotel/B4C3/index.fr.shtml",
       tel: "+33 3 44 58 47 77",
       desc: ` 18km | 30min`,
       img: "mercure.png",
+      extraEN:
+        "For Korean and International guests, please contact us for booking",
+      extraKR:
+        "한국 및 해외에서 오시는 분들을 위한 호텔입니다\n 예약 전 저희에게 문의주세요",
+    },
+    {
+      name: "NOVOTEL MAFFLIERS **** ",
+      link: "https://all.accor.com/hotel/0383/index.fr.shtml",
+      tel: "+33 1 34 08 35 35",
+      desc: ` 10km | 17min`,
+      img: "novotel.png",
     },
     {
       name: "LE DOMAINE DES VANNEAUX **** ",
@@ -77,7 +77,7 @@ export default function Hotels() {
         {translate(
           lang,
           "RECOMMEND BOOKING TO ENJOY THE PARTY",
-          "RÉSERVEZ UN HÔTEL POUR PROFITER DE LA SOIRÉE"
+          "RÉSERVEZ UN HÔTEL POUR PROFITER DE LA SOIRÉE",
         )}
       </p>
       <p
@@ -91,7 +91,7 @@ export default function Hotels() {
         {translate(
           lang,
           "CLICK BELOW FOR DIRECT PAGE",
-          "CLIQUEZ CI-DESSOUS POUR RÉSERVER VOTRE HÔTEL. (NE TARDEZ PAS!) "
+          "CLIQUEZ CI-DESSOUS POUR RÉSERVER VOTRE HÔTEL. (NE TARDEZ PAS!) ",
         )}
       </p>
       {lang === "fr" ? (
@@ -113,7 +113,7 @@ export default function Hotels() {
                 <div
                   className={classNames(
                     "hotelImgContainer",
-                    hotel.displayClass
+                    hotel.displayClass,
                   )}
                 >
                   <a href={hotel.link} target="_blank">
