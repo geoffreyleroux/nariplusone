@@ -91,7 +91,7 @@ export default function Hotels() {
         {translate(
           lang,
           "CLICK BELOW FOR DIRECT PAGE",
-          "CLIQUEZ CI-DESSOUS POUR RÉSERVER VOTRE HÔTEL. (NE TARDEZ PAS!) ",
+          "CLIQUEZ CI-DESSOUS POUR CHOISIR VOTRE HÔTEL. (NE TARDEZ PAS!) ",
         )}
       </p>
       {lang === "fr" ? (
