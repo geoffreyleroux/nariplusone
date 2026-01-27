@@ -37,10 +37,24 @@ export default function App() {
             <p className="date">
               {translate(lang, "12/07/2026 SUNDAY", "DIMANCHE 12/07/2026")}
             </p>
-            <p className="name">CHÂTEAU DE CHAMPLÂTREUX</p>
+            <p className="name">
+              <a
+                href="https://maps.app.goo.gl/bzk23U696qmYJgia8"
+                target="_blank"
+                rel="noreferrer"
+              >
+                CHÂTEAU DE CHAMPLÂTREUX
+              </a>
+            </p>
             <p className="address">
-              <span>ÉPINAY-CHAMPLÂTREUX</span>
-              <span>&nbsp;95270</span>
+              <a
+                href="https://maps.app.goo.gl/bzk23U696qmYJgia8"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <span>ÉPINAY-CHAMPLÂTREUX</span>
+                <span>&nbsp;95270</span>
+              </a>
             </p>
           </div>
           <Menu />
