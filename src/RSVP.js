@@ -28,7 +28,7 @@ export default function RSVP() {
             }}
           >
             FORMULAIRE
-          </a>{" "}
+          </a>{"\n"}
           AU PLUS TARD LE 31 MARS
         </p>
       ) : (
